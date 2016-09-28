@@ -1,0 +1,1 @@
+$('#targetid').load('navbar.html')

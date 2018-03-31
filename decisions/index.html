@@ -14,7 +14,7 @@
 
 </script>
 	</div>
-    <title>Taxi</title>
+    <title>Decisions</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -63,74 +63,110 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="col-lg-12">
-                            <div class="col-lg-6 text-center">
-                                <h2>RNG 1-1000</h2>
-                                <h3 id="1000">0</h3>
-                                <a href="#" id="RNG">Randomize</a>
-                                <hr />
-                                <script>
-                                    $("#RNG").click(function(){
-                                        $("#1000").text(Math.round(Math.random() * 1000))
-                                    })
-                                </script>
-                            </div>
-                            <div class="col-lg-6 text-center">
-                                <h2>Dice Roll</h2>
-                                <h3 id="dice">0</h3>
-                                <a href="#" id="roll">Roll</a>
-                                <hr />
-                                <script>
-                                    $("#roll").click(function(){
-                                        var x = Math.round((Math.random() * 5) + 1)
-                                        $("#dice").text(x)
-                                    })
-                                </script>
-                            </div>
-                            <div class="col-lg-6 text-center">
-                                <h2>Coin Flip</h2>
-                                <h3 id="coin">0</h3>
-                                <a href="#" id="Flip">Flip</a>
-                                <hr />
-                                <script>
-                                    $("#Flip").click(function(){
-                                        var x = Math.round((Math.random() * 1) + 1)
-                                        var y = x == 1 ? "Heads" : "Tails"
-                                        $("#coin").text(y)
-                                    })
-                                </script>
-                            </div>
-                            <div class="col-lg-6 text-center">
-                                <h2>Earphones</h2>
-                                <h3 id="earphone">0</h3>
-                                <a href="#" id="Choose">Decide</a>
-                                <hr />
-                                <script>
-                                    $("#Choose").click(function(){
-                                        var x = Math.round((Math.random() * 5) + 1)
-                                        var y = x == 1 ? "Ultimate Ears UE900s" : x == 2 ? "Shure SE535 LTD" : x== 3 ? "Shure SE846" : x == 4 ? "64Audio A4" : x == 5 ? "NuForce HEM8" : 0
-                                        $("#earphone").text(y)
-                                    })
-                                </script>
-                            </div>
-                            <div class="col-lg-12 text-center">
-                                <h2>1e+6</h2>
-                                <h3 id="password">0</h3>
-                                <a href="#" id="create">Create Code</a>
-                                <hr />
-                                <script>
-                                    $("#create").click(function(){
-                                        var x = Math.round(Math.random() * 1000000)
-                                        $("#password").text(x)
-                                    })
-                                </script>
-                                <br /><br>
-                                <br>
-                                <br>
-                                <br>
+                                <div class="col-lg-6 text-center">
+                                    <h2>RNG 1-1000</h2>
+                                    <h3 id="1000">0</h3>
+                                    <a href="#" id="RNG">Randomize</a>
+                                    <hr />
+                                    <script>
+                                        $("#RNG").click(function(){
+                                            $("#1000").text(Math.round(Math.random() * 1000))
+                                        })
+                                    </script>
                                 </div>
+                                <div class="col-lg-6 text-center">
+                                    <h2>Dice Roll</h2>
+                                    <h3 id="dice">0</h3>
+                                    <a href="#" id="roll">Roll</a>
+                                    <hr />
+                                    <script>
+                                        $("#roll").click(function(){
+                                            var x = Math.round((Math.random() * 5) + 1)
+                                            $("#dice").text(x)
+                                        })
+                                    </script>
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <h2>Coin Flip</h2>
+                                    <h3 id="coin">0</h3>
+                                    <a href="#" id="Flip">Flip</a>
+                                    <hr />
+                                    <script>
+                                        $("#Flip").click(function(){
+                                            var x = Math.round((Math.random() * 1) + 1)
+                                            var y = x == 1 ? "Heads" : "Tails"
+                                            $("#coin").text(y)
+                                        })
+                                    </script>
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <h2>Earphones</h2>
+                                    <h3 id="earphone">0</h3>
+                                    <a href="#" id="Choose">Decide</a>
+                                    <hr />
+                                    <script>
+                                        $("#Choose").click(function(){
+                                            var x = Math.round((Math.random() * 5) + 1)
+                                            var y = x == 1 ? "Ultimate Ears UE900s" : x == 2 ? "Shure SE535 LTD" : x== 3 ? "Shure SE846" : x == 4 ? "64Audio A4" : x == 5 ? "NuForce HEM8" : 0
+                                            $("#earphone").text(y)
+                                        })
+                                    </script>
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <h2>1e+6</h2>
+                                    <h3 id="password">0</h3>
+                                    <a href="#" id="create">Create Code</a>
+                                    <hr />
+                                    <script>
+                                        $("#create").click(function(){
+                                            var x = Math.round(Math.random() * 1000000)
+                                            $("#password").text(x)
+                                        })
+                                    </script>
+                                </div>
+                                <div class="col-lg-6 text-center">
+                                    <h2>Password String</h2>
+                                    <h3 id="code">0</h3>
+                                    <a href="#" id="createCode">Create Code</a>
+                                    <hr />
+                                    <script>
+                                        $("#createCode").click(function(){
+                                            var character = Math.round((Math.random() * 25) + 97)
+                                            var character = String.fromCharCode(character)
+                                            var character2 = String.fromCharCode(Math.round((Math.random() * 25) + 97))
+                                            var character3 = String.fromCharCode(Math.round((Math.random() * 25) + 97))
+                                            var character4 = String.fromCharCode(Math.round((Math.random() * 25) + 97))
+                                            var stringOfNumbers = Math.round((Math.random() * Math.pow(10, 8))+1)
+                                            $("#code").text(character + character2 + stringOfNumbers + character3 + character4)
+                                        })
+                                    </script>
+                                </div>
+                                <div class="col-lg-12 text-center">
+                                    <hr />
+                                    <h2>Transportation to go home</h2>
+                                    <h3 id="transport">0</h3>
+                                    <a href="#" id="means">Choose</a>
+                                    <hr />
+                                    <script>
+                                        $("#means").click(function(){
+                                           var x = Math.round((Math.random() * 10) + 1)
+                                            var y = x <= 5 ? "Bus" : x >= 5 && x <= 7 ? "MTR" : x>= 7 && x <= 9? "Shuttle" : "Cab" 
+                                            $("#transport").text(y)
+                                        })
+                                    </script>
+                                </div>
+                                <div class="col=lg-12 text-center">
+                                    <p>&nbsp;</p>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    
+                                </div>
+                                
+                            </div>
                         </div>
-                        
-                    </div>
 
                         <div class="modal fade" id="terms" tabindex="-1" role="dialog" aria-labelledby="termsModal" aria-hidden="true">
                             <div class="modal-dialog" role="document">

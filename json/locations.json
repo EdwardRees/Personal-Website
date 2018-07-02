@@ -1,18 +1,32 @@
 [
-    {
-        "name":"Location 1",
-        "address":"Address of location 1"
-    },
-    {
-        "name":"Location 2",
-        "address":"Address of location 2"
-    },
-    {
-        "name":"Location 3",
-        "address":"Address of location 3"
-    },
-    {
-        "name":"Location 4",
-        "address":"Address of location 4"
-    }
+ {
+ "id":0,
+ "name":"Location 1",
+ "location":"place 1"
+ },
+ {
+ "id":1,
+ "name":"Location 2",
+ "location":"place 2"
+ },
+ {
+ "id":2,
+ "name":"Location 3",
+ "location":"place 3"
+ },
+ {
+ "id":3,
+ "name":"Location 4",
+ "location":"place 4"
+ },
+ {
+ "id":4,
+ "name":"Location 5",
+ "location":"place 5"
+ },
+ {
+ "id":5,
+ "name":"Location 6",
+ "location":"place 6"
+ }
 ]

@@ -1,0 +1,32 @@
+[
+ {
+ "id":0,
+ "name":"Share Tea Causeway Bay Times Square",
+ "address":"Times Square"
+ },
+ {
+ "id":1,
+ "name":"Share Tea Causeway Bay Sogo",
+ "address":"Sogo"
+ },
+ {
+ "id":2,
+ "name":"TianRen Causeway Bay Hysan Place",
+ "address":"Hysan Place"
+ },
+ {
+ "id":3,
+ "name":"Share Tea Aberdeen",
+ "address":"Aberdeen"
+ },
+ {
+ "id":4,
+ "name":"Gong Cha Aberdeen",
+ "address":"Aberdeen"
+ },
+ {
+ "id":5,
+ "name":"TianRen Aberdeen",
+ "address":"Aberdeen"
+ }
+]

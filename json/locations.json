@@ -28,5 +28,15 @@
  "id":5,
  "name":"Location 6",
  "address":"place 6"
+ },
+ {
+ "id":6,
+ "name":"Location 7",
+ "address":"place 7"
+ },
+ {
+ "id":7,
+ "name":"Location 8",
+ "address":"place 8"
  }
 ]

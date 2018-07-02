@@ -2,31 +2,31 @@
  {
  "id":0,
  "name":"Location 1",
- "location":"place 1"
+ "address":"place 1"
  },
  {
  "id":1,
  "name":"Location 2",
- "location":"place 2"
+ "address":"place 2"
  },
  {
  "id":2,
  "name":"Location 3",
- "location":"place 3"
+ "address":"place 3"
  },
  {
  "id":3,
  "name":"Location 4",
- "location":"place 4"
+ "address":"place 4"
  },
  {
  "id":4,
  "name":"Location 5",
- "location":"place 5"
+ "address":"place 5"
  },
  {
  "id":5,
  "name":"Location 6",
- "location":"place 6"
+ "address":"place 6"
  }
 ]

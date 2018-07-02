@@ -2,42 +2,42 @@
  {
  "id":0,
  "name":"Share Tea Causeway Bay Times Square",
- "company-name":"Share Tea",
+ "companyname":"Share Tea",
  "address":"Times Square",
  "area":"Causeway Bay"
  },
  {
  "id":1,
  "name":"Share Tea Causeway Bay Sogo",
- "company-name":"Share Tea",
+ "companyname":"Share Tea",
  "address":"Sogo",
  "area":"Causeway Bay"
  },
  {
  "id":2,
  "name":"TianRen Causeway Bay Hysan Place",
- "company-name":"TianRen",
+ "companyname":"TianRen",
  "address":"Hysan Place",
  "area":"Causeway Bay"
  },
  {
  "id":3,
  "name":"Share Tea Aberdeen",
- "company-name":"Share Tea",
+ "companyname":"Share Tea",
  "address":"Aberdeen",
  "area":"Aberdeen"
  },
  {
  "id":4,
  "name":"Gong Cha Aberdeen",
- "company-name":"Gong Cha",
+ "companyname":"Gong Cha",
  "address":"Aberdeen",
  "area":"Aberdeen"
  },
  {
  "id":5,
  "name":"TianRen Aberdeen",
- "company-name":"TianRen",
+ "companyname":"TianRen",
  "address":"Aberdeen",
  "area":"Aberdeen"
  }

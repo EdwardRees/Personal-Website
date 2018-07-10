@@ -1,0 +1,11 @@
+{
+  "name": "nodeproject",
+  "version": "0.0.0",
+  "description": "New Project for a node driven website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edward Rees",
+  "license": "ISC"
+}

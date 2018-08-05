@@ -981,27 +981,77 @@
         hkis.listOfStudents();
     })
     $("#populate").click(function () {
-        hkis.addStudent(new Student("John", "Doe", 17, 100000 + Math.floor(Math.random() * 14) * 10000 + Math.floor(
-            Math.random() * 1000), [
-            new Subject("Statistics", new Teacher("Kevin", "McCaughey"), "Mathematics", 0.5, 601, 1,
-                "A"),
-            new Subject("Math of Human Behavior", new Teacher("Quinten", "Painter"), "Mathematics",
-                0.5, 601, 1,
-                "A-"),
-            new Subject("AP Psychology", new Teacher("Edmond", "Li"), "Psychology", 1.0, 101, 2,
-                "B+"),
-            new Subject("Honors Physics", new Teacher("Shirley", "Gill"), "Science", 1.0, 708, 3,
-                "B"),
-            new Subject("AP Chinese", new Teacher("Belinda", "Bian"), "Second Language", 1.0, 806,
-                4,
-                "A"),
-            new Subject("AP Calculus", new Teacher("Ian", "Gill"), "Mathematics", 1.0, 504, 5,
-                "A"),
-            new Subject("Senior English Asian", new Teacher("Janet", "Tan"), "English", 1.0, 702, 6,
-                "A"),
-            new Subject("PE12", new Teacher("Eric", "MacDonald"), "Physical Education", 0.5, 0, 8,
-                "A"),
-        ]));
+        const grades = ["a", "a-", "b+", "b", "c"];
+        const englishTeachers = ["Jeremy Seehafer", "Brian Oliver", "Jon Bryant", "George Coombs",
+            "Kevin Longrie", "Sangwon Suh", "Edmond Li", "Rob Ferrin", "Mike Baker", "Marty Schmidt",
+            "Elsebeth Ladegaard", "Sarah Wheatley", "Meredith Haskins", "Janet Tan", "Norbyah Nolasco",
+            "Kelly Morlan", "Brenda Brayko", "Leo Zen", "Zella Talbot", "Mike Kersten",
+            "Betsy Lewis-Moreno"
+        ];
+        const psychTeachers = ["Edmond Li", "Jon Bryant"]
+        const mathTeachers = ["Ian Gill", "Quentin Painter", "Chadwick Hamilton", "Janet Taylor",
+            "Kevin McCaughey", "Simon Thauvette", "Teresa Peabody", "Hannah Cho", "Yingru McCaughey",
+            "Sue Harvey", "Andrea Osborne"
+        ]
+        const scienceTeachers = ["Chris Buxton", "Bill Canham", "Dee Mulligan", "Janice Beatty", "Shirley Gill",
+            "Jon Smedes", "Cherl Chambers", "Shawn Krause", "JOanne Brown"
+        ]
+        const chineseTeachers = ["Jane Ye", "Belinda Bian", "Shumin Yan", "Vivian Zhang", "Susan Kwok",
+            "Brenda Xing", "Lisa Zhong"
+        ]
+        const romLangTeachers = ["Linda Dunoye", "Gabriel Fornes", "Linda Lehmil", "Ana Estella"]
+
+        const peTeachers = ["Vangie Wimbush", "Ashley Billington", "Luke Wimbush", "Janie Grant",
+            "Eric MacDonald"
+        ]
+
+        const firstNames = ["Abby", "Ashley", "Andrea", "Bob", "Charles", "Chloe", "Christine", "Derek",
+            "Edward", "Edwin", "Fred", "George", "Harold", "Icarus"
+        ]
+        const lastNames = ["Chan", "Lee", "Wong", "Chen", "Cheung", "Leung", "Lin", "Ng", "Nelson", "Tang"]
+
+        function teacherName(name) {
+            const name1 = name.split(" ");
+            return new Teacher(name1[0], name1[1]);
+        }
+
+        function randomFirst() {
+            return firstNames[Math.floor(Math.random() * firstNames.length)];
+        }
+
+        function randomLast() {
+            return lastNames[Math.floor(Math.random() * lastNames.length)]
+        }
+        hkis.addStudent(new Student(randomFirst(), randomLast(), 17, 120000 + Math.floor(Math.random() * 14) *
+            10000 + Math.floor(
+                Math.random() * 1000), [
+                new Subject("Statistics", teacherName(mathTeachers[Math.floor(Math.random() *
+                        mathTeachers.length)]), "Mathematics", 0.5, 601, 1,
+                    grades[Math.floor(Math.random() * grades.length)]),
+                new Subject("Math of Human Behavior", teacherName(mathTeachers[Math.floor(Math.random() *
+                        mathTeachers.length)]), "Mathematics",
+                    0.5, 601, 1,
+                    grades[Math.floor(Math.random() * grades.length)]),
+                new Subject("AP Psychology", teacherName(psychTeachers[Math.floor(Math.random() *
+                        psychTeachers.length)]), "Psychology", 1.0, 101, 2,
+                    grades[Math.floor(Math.random() * grades.length)]),
+                new Subject("Honors Physics", teacherName(scienceTeachers[Math.floor(Math.random() *
+                        scienceTeachers.length)]), "Science", 1.0, 708, 3,
+                    grades[Math.floor(Math.random() * grades.length)]),
+                new Subject("AP Chinese", teacherName(chineseTeachers[Math.floor(Math.random() *
+                        chineseTeachers.length)]), "Second Language", 1.0, 806,
+                    4,
+                    grades[Math.floor(Math.random() * grades.length)]),
+                new Subject("AP Calculus", teacherName(mathTeachers[Math.floor(Math.random() *
+                        mathTeachers.length)]), "Mathematics", 1.0, 504, 5,
+                    grades[Math.floor(Math.random() * grades.length)]),
+                new Subject("Senior English Asian", teacherName(englishTeachers[Math.floor(Math.random() *
+                        englishTeachers.length)]), "English", 1.0, 702, 6,
+                    grades[Math.floor(Math.random() * grades.length)]),
+                new Subject("PE12", teacherName(peTeachers[Math.floor(Math.random() *
+                        peTeachers.length)]), "Physical Education", 0.5, 0, 8,
+                    grades[Math.floor(Math.random() * grades.length)]),
+            ]));
         hkis.listOfStudents();
     })
     $("#clear").click(function () {

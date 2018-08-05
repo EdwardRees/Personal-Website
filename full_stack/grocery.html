@@ -4,89 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../main/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap_files/css/bootstrap.min.css">
+    <script src="../bootstrap_files/js/bootstrap.min.js"></script>
     <script src="../main/js/jquery.js"></script>
-    <script src="../main/js/bootstrap.min.js"></script>
     <script src="./js/cart.js"></script>
 
     <title>Grocery Shopping</title>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="./index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./general.html">Easy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./grocery.html">Medium</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./school.html">Difficult</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12 header">
                 <h1>Grocery Shopping</h1>
             </div>
             <div class="col-lg-12 body">
-                <div class="col-lg-4">
-                    <h2>Add Items</h2>
-                    <br>
-                    <div class="col-lg-6">
-                        <label for="aname">Name</label>
-                        <input type="text" id="aname">
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="aquantity">Quantity</label>
-                        <input type="text" id="aquantity">
-                    </div>
-                    <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h2>Add Items</h2>
                         <br>
-                        <button id="add">Add</button>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="aname">Name</label>
+                                <input type="text" id="aname">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="aquantity">Quantity</label>
+                                <input type="text" id="aquantity">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <br>
+                            <button id="add">Add</button>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-                    <h2>Remove Items</h2>
-                    <br>
-                    <br>
-                    <div class="col-lg-12">
-                        <label for="rname">Name</label>
-                        <input type="text" id="rname">
-                    </div>
-                    <div class="col-lg-12">
+                    <div class="col-lg-4">
+                        <h2>Remove Items</h2>
                         <br>
-                        <button id="remove">Remove</button>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <h2>Update Items</h2>
-                    <br>
-                    <div class="col-lg-6">
-                        <label for="uname">Name</label>
-                        <input type="text" id="uname">
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="uquantity">Quantity</label>
-                        <input type="text" id="uquantity">
-                    </div>
-                    <div class="col-lg-12">
                         <br>
-                        <button id="update">Update</button>
+                        <div class="col-lg-12">
+                            <label for="rname">Name</label>
+                            <input type="text" id="rname">
+                        </div>
+                        <div class="col-lg-12">
+                            <br>
+                            <button id="remove">Remove</button>
+                        </div>
                     </div>
-                </div>
-                <br>
-                <br>
-                <div class="col-lg-4">
+                    <div class="col-lg-4">
+                        <h2>Update Items</h2>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="uname">Name</label>
+                                <input type="text" id="uname">
+                            </div>
+                            <div class="col-lg-6">
+                                <label for="uquantity">Quantity</label>
+                                <input type="text" id="uquantity">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <br>
+                            <button id="update">Update</button>
+                        </div>
+                    </div>
                     <br>
-                    <button id="list">List</button>
-                </div>
-                <div class="col-lg-4">
                     <br>
-                    <button id="populate">Populate</button>
-                </div>
+                    <div class="col-lg-4">
+                        <br>
+                        <button id="list">List</button>
+                    </div>
+                    <div class="col-lg-4">
+                        <br>
+                        <button id="populate">Populate</button>
+                    </div>
 
-                <div class="col-lg-4">
-                    <br>
-                    <button id="clear">Clear</button>
-                </div>
-                <br>
-                <br>
-                <div class="col-lg-12">
-                    <h2 id="itemTitle">List of Items: 0</h2>
-                    <div>
-                        <ul id="items"></ul>
+                    <div class="col-lg-4">
+                        <br>
+                        <button id="clear">Clear</button>
                     </div>
-                    <br><br><br><br><br><br><br>
+                    <br>
+                    <br>
+                    <div class="col-lg-12">
+                        <h2 id="itemTitle">List of Items: 0</h2>
+                        <div class="col-lg-12">
+                            <ul id="items" class="row"></ul>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
                 </div>
             </div>
         </div>
@@ -104,7 +137,7 @@
         $("#update").removeClass("btn-primary")
         $("#update").addClass("btn-warning");
         $("#items").addClass("text-center");
-        
+
 
     })
     $("#add").click(function () {
@@ -139,12 +172,14 @@
     })
 
     $("#populate").click(function () {
-        const items = ["Apple", "Banana", "Tomato", "Cherry", "Peach", "Strawberry", "Tea", "Coffee", "Nectarine"];
-        for(let val of items){
+        const items = ["Apple", "Banana", "Tomato", "Cherry", "Peach", "Strawberry", "Tea", "Coffee",
+            "Nectarine"
+        ];
+        for (let val of items) {
             cart.addGrocery(new Grocery(val, Math.floor(Math.random() * 100)));
         }
         cart.updateListOfGroceryNames();
-       // cart.printListOfGroceryNames();
+        // cart.printListOfGroceryNames();
     })
 
     $("#clear").click(function () {
@@ -157,14 +192,15 @@
     #items {
         list-style-type: none
     }
+
     .header {
         border-bottom: 1px solid #000;
         border-right: 1px solid #180213;
         border-left: 1px solid #181005;
         border-top: 1px solid #180641;
     }
-    .body{
-    }
+
+    .body {}
 </style>
 
 </html>

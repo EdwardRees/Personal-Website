@@ -37,7 +37,7 @@ class Cart {
   removeItemByName(name) {
     const cart = this.getCart();
     for (let i = 0; i < cart.length; i++) {
-      if (cart[i].getName() == name) {
+      if (cart[i].getName().toUpperCase() == name.toUpperCase()) {
         delete cart[i];
         cart.splice(i, 1);
       }

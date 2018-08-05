@@ -11,8 +11,8 @@ class Cart {
     return this.cart;
   }
 
-  getCartSize(){
-      return this.cart.length;
+  getCartSize() {
+    return this.cart.length;
   }
 
   updateListOfGroceryNames() {
@@ -21,9 +21,9 @@ class Cart {
     var itemTitle = $("#itemTitle");
     items.empty();
     itemTitle.empty();
-    itemTitle.append("List of Items: <span>" + cart.length + "</span>")
+    itemTitle.append("List of Items: <span>" + cart.length + "</span>");
     for (var x of cart) {
-      items.append("<li class='col-lg-3'> " + x.getDetails() + "</li>");
+      items.append("<li class='col-lg-3 item'>" + x.getDetails() + "</li>");
     }
   }
 
@@ -60,9 +60,6 @@ class Cart {
     for (let i = 0; i < cart.length; i++) {
       cart.splice(i, cart.length);
     }
-    //   for(let c of cart){
-    //     //   this.removeItemByName(c.getName());
-    //   }
   }
 }
 
@@ -72,12 +69,12 @@ class Item {
     this.id = id;
   }
 
-  getName(){
-      return this.name;
+  getName() {
+    return this.name;
   }
 
-  getID(){
-      return this.id;
+  getID() {
+    return this.id;
   }
 }
 
@@ -91,8 +88,8 @@ class Grocery extends Item {
     return super.getName();
   }
 
-  getID(){
-      return super.getID();
+  getID() {
+    return super.getID();
   }
 
   getQuantity() {

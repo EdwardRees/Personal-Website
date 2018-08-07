@@ -3,6 +3,7 @@ class Cart {
     this.cart = [];
   }
 
+  
   addGrocery(grocery) {
     this.cart.push(grocery);
   }

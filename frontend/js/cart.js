@@ -123,4 +123,4 @@ function test() {
   cart.printListOfGroceryNames();
 }
 
-// test();
+test();

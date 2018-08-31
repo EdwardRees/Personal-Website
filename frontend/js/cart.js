@@ -106,7 +106,7 @@ class Grocery extends Item {
   }
 }
 
-function test() {
+function main() {
   var cart = new Cart();
   cart.addGrocery(new Grocery("Cup", 1, 0));
   cart.addGrocery(new Grocery("Coffee Beans", 10, 1));
@@ -123,4 +123,4 @@ function test() {
   cart.printListOfGroceryNames();
 }
 
-test();
+main();

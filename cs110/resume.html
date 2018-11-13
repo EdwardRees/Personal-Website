@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script>
+        var check = true;
+        function onClick(){
+            $("#workTable").toggle()
+            check = !check
+            if(check){
+                $("#show").text("Show Experience")
+            }
+            if(!check){
+                $("#show").text("Hide Experience")
+            }
+        }
+        var projects = true;
+        function showProjects(){
+            $("#projectTable").toggle()
+            projects = !projects;
+            if(projects){
+                $("#projects").text("Show Projects")
+            }
+            else {
+                $("#projects").text("Hide Projects")
+            }
+        }
+        $("document").ready(function(){
+            if(check){
+                $("#show").text("Show Experience")
+            }
+            if(projects){
+                $("#projects").text("Show Projects")
+            }
+            $("#workTable").hide()
+            $("#projectTable").hide()
+        })
+    </script>
+    <title>Edward Rees</title>
+</head>
+
+<body>
+    <div class="row text-center">
+        <div class="col-lg-6">
+            <img src="http://edwardrees.github.io/img/personal.png" class="img-fluid img-thumbnail">
+        </div>
+        <div class="col-lg-6">
+            <hr>
+            <h1>Edward Rees</h1>
+            <hr>
+            <h2>Contact Information:</h2>
+            <a href="mailto:erees@dons.usfca.edu">
+                Email: erees@dons.usfca.edu
+            </a>
+            <hr>
+            <h3>Favorite Links:</h3>
+            <ul class="text-left">
+                <li>
+                    <a href="https://www.youtube.com" target="blank">YouTube</a>
+                </li>
+                <li>
+                    <a href="https://www.stackoverflow.com" target="blank">StackOverflow</a>
+                </li>
+                <li>
+                    <a href="https://www.collegeselector.app" target="blank">College Selector</a>
+                </li>
+            </ul>
+            <hr>
+            <h3>Favorite Films:</h3>
+            <ol class="text-left">
+                <li>
+                    <a href="https://www.imdb.com/title/tt0848228/?ref_=nv_sr_3" target="blank">Marvel's The Avengers</a>
+                </li>
+                <li>
+                    <a href="https://www.imdb.com/title/tt0482571/?ref_=nv_sr_1" target="blank">The Prestige</a>
+                </li>
+                <li>
+                    <a href="https://www.imdb.com/title/tt0114709/?ref_=nv_sr_2" target="blank">Toy Story</a>
+                </li>
+            </ol>
+            <hr>
+            <h3>Work Experience:</h3><span><button onclick="onClick()" id="show"></button></span>
+            <table class="table" id="workTable">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Location</th>
+                        <th>Job Title</th>
+                        <th>Time Frame</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>S Plus Group Limited</th>
+                        <td>Hong Kong SAR</td>
+                        <td>Part-time Chief Technology Officer</td>
+                        <td>October 2015, Present</td>
+                    </tr>
+                    <tr>
+                        <th>Foodie Magazine</th>
+                        <td>Hong Kong SAR</td>
+                        <td>Volunteer</td>
+                        <td>October 2015, August 2018</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <h3>Projects</h3><span><button onclick="showProjects()" id="projects"></button></span>
+            <table class="table" id="projectTable">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Project Description</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>College Selector</th>
+                        <td>Using React Native, created a mobile app and published to Android and Apple App Stores.</td>
+                        <td><a href="https://www.collegeselector.app">Link</a></td>
+                    </tr>
+                    <tr>
+                        <th>S Plus Group Website</th>
+                        <td>Using HTML5, CSS3, jQuery, Bootstrap 3, created a website to show information</td>
+                        <td><a href="http://www.splugroup.net">Link</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

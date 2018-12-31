@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS Playground</title>
+    <link rel="stylesheet" href="../bootstrap_files/css/bootstrap.min.css">
+    <script src="../bootstrap_files/js/bootstrap.min.js"></script>
+    <script src="../bootstrap_files/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <h1>Pure JavaScript Testing Space</h1>
+            </div>
+            <div class="col-lg-6">
+                <h1>Input</h1>
+                <br>
+                <textarea name="textarea" id="textarea" cols="50" rows="10" width="100%"></textarea>
+                <br>
+                <button class="btn btn-success btn-block" id="run">Run</button>
+                <button class="btn btn-danger btn-block" id="clear">Clear</button>
+            </div>
+            <div class="col-lg-6">
+                <h1>Output</h1>
+                <div id="outputarea"></div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $("document").ready(function () {
+            clear()
+        })
+        $("#run").click(function () {
+            //clear()
+            run()
+        })
+    </script>
+    <script>
+        $("#clear").click(function () {
+            clear()
+        })
+    </script>
+    <script>
+        function clear() {
+            console.log = function (msg) {
+                console.clear()
+            }
+            $("#outputarea").html("<div></div>")
+            $("#outputarea").append("<div></div>")
+        }
+        function run(){
+            var headID = document.getElementsByTagName("head")[0];
+            var newScript = document.createElement("script");
+            newScript.type = "text/javascript";
+            newScript.innerHTML = document.getElementById("textarea").value;
+            headID.appendChild(newScript);
+            var former = console.log;
+            console.log = function (msg) {
+                $("#outputarea").append("<div>" + msg + "</div>");
+            }
+            window.onerror = function (message, url, linenumber) {
+                console.log("JavaScript error: " + message + " on line " +
+                linenumber + " for " + url);
+            }
+        }
+        function failed(){
+            console.log("Failed")
+        }
+        function success(){
+            console.log("Success")
+        }
+    </script>
+</body>
+
+</html>

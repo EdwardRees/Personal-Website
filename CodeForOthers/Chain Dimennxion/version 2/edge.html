@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chain Dimennxion | Our Edge</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bower_components/jquery-snappish/jquery.snappish.css" rel="stylesheet">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="bower_components/jquery.event.move/js/jquery.event.move.js"></script>
+    <script src="bower_components/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+    <script src="bower_components/jquery-snappish/jquery.snappish.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+    <script src="/js/header.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/anime/lib/anime.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header"></div>
+        <div id="body">
+            <div id="wrapper">
+                <div class="snappish-main">
+                    <div class="slide1 text-center">
+                        <svg viewbox="0 0 680 660" height="680" width="660">
+                            <rect>
+                                <animate id="dummylg" begin="0;dummylg.end" dur="8s" attributeName="visibility" from="hide"
+                                    to="hide"></animate>
+                            </rect>
+                            <rect>
+                                <animate id="dummymd" begin="0;dummymd.end" dur="10s" attributeName="visibility" from="hide"
+                                    to="hide"></animate>
+                            </rect>
+                            <rect>
+                                <animate id="dummysm" begin="0;dummysm.end" dur="12s" attributeName="visibility" from="hide"
+                                    to="hide"></animate>
+                            </rect>
+                            <circle cx="330" cy="65" r="20" fill="#B3A479" id="alg">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
+                            </circle>
+                            <circle cx="330" cy="30" r="10"  fill="#B3A479" id="amd">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
+                            </circle>
+                            <circle cx="330" cy="10" r="5"  fill="#B3A479" id="asm">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
+                            </circle>
+
+
+                            <circle cx="390.9" cy="90" r="20" fill="#B3A479" id="a1lg">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
+                            </circle>
+                            <circle cx="408.4" cy="59.7" r="10"  fill="#B3A479" id="a1md">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
+                            </circle>
+                            <circle cx="418.4" cy="42.4" r="5"  fill="#B3A479" id="a1sm">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
+                            </circle>
+
+
+
+
+
+                            <circle cx="601.6" cy="192" r="20"  fill="#B3A479" id="blg">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
+                            </circle>
+                            <circle cx="631.9" cy="180.47" r="10"  fill="#B3A479" id="bmd">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
+                            </circle>
+                            <circle cx="649.2" cy="170.47" r="5"  fill="#B3A479" id="bsm">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
+                            </circle>
+
+                            <circle cx="601.65" cy="487" r="20"  fill="#B3A479" id="clg">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
+                            </circle>
+                            <circle cx="631.9" cy="504.5" r="10"  fill="#B3A479" id="cmd">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
+                            </circle>
+                            <circle cx="649.2" cy="514.5" r="5"  fill="#B3A479" id="csm">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
+                            </circle>
+
+                            <circle cx="330" cy="615" r="20"  fill="#B3A479" id="dlg">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
+                            </circle>
+                            <circle cx="330" cy="650" r="10"  fill="#B3A479" id="dmd">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
+                            </circle>
+                            <circle cx="330" cy="670" r="5"  fill="#B3A479" id="dsm">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
+                            </circle>
+
+
+                            <circle cx="58.35" cy="487.03" r="20"  fill="#B3A479" id="elg">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
+                            </circle>
+                            <circle cx="28.03" cy="504.5" r="10"  fill="#B3A479" id="emd">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
+                            </circle>
+                            <circle cx="10.7" cy="514.5" r="5"  fill="#B3A479" id="esm">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
+                            </circle>
+
+                            <circle cx="58.35" cy="192.97" r="20"  fill="#B3A479" id="flg">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
+                            </circle>
+                            <circle cx="28.03" cy="175.47" r="10"  fill="#B3A479" id="fmd">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
+                            </circle>
+                            <circle cx="10.7" cy="165.47" r="5"  fill="#B3A479" id="fsm">
+                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
+                            </circle>
+
+
+
+                            <polygon class="hexagon" points="330,90 ,580, 205.4700538379, 580, 474.5299461621, 330, 590, 80,474.5299461621, 80,205.4700538379"
+                                style="fill: none; stroke: #B3A479; stroke-width: 1"></polygon>
+                            <!-- <text x="250" y="250">State-of-the-art Technology</text> -->
+                        </svg>
+                    </div>
+                    <div class="slide2">
+                        <h1>Slide 2!</h1>
+                    </div>
+                    <div class="slide3">
+                        <h1>Slide 3!</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+</body>
+<script>
+    $("#wrapper").snappish();
+</script>
+<style>
+    .circle1 {
+        border-radius: 50%;
+        background-color: blue;
+        width: 48px;
+        height: 48px;
+    }
+</style>
+<!-- slide 1 circles State of the Art -->
+<script>
+    anime({
+        targets: '.circle1',
+        scale: 1.5,
+        duration: 3000,
+        loop: true,
+        easing: 'easeInOutSine',
+        direction: 'alternate',
+    });
+    /*var alg = document.getElementById("alg");
+    anime({
+        targets: alg,
+        scaleX: 0.1,
+        loop: true,
+        direction: 'alternate',
+        easing: 'easeInOutExpo'
+    })*/
+</script>
+<script>
+    /*
+var advancedStaggeringAnimation = (function() {
+
+    var staggerVisualizerEl = document.querySelector('.stagger-visualizer');
+    var dotsWrapperEl = staggerVisualizerEl.querySelector('.dots-wrapper');
+    var dotsFragment = document.createDocumentFragment();
+    var grid = [20, 10];
+    var cell = 55;
+    var numberOfElements = grid[0] * grid[1];
+    var animation;
+    var paused = true;
+
+    fitElementToParent(staggerVisualizerEl);
+
+    for (var i = 0; i < numberOfElements; i++) {
+        var dotEl = document.createElement('div');
+        dotEl.classList.add('dot');
+        dotsFragment.appendChild(dotEl);
+    }
+
+    dotsWrapperEl.appendChild(dotsFragment);
+
+    var index = anime.random(0, numberOfElements - 1);
+    var nextIndex = 0;
+
+    anime.set('.stagger-visualizer .cursor', {
+        translateX: anime.stagger(-cell, {
+            grid: grid,
+            from: index,
+            axis: 'x'
+        }),
+        translateY: anime.stagger(-cell, {
+            grid: grid,
+            from: index,
+            axis: 'y'
+        }),
+        translateZ: 0,
+        scale: 1.5,
+    });
+
+    function play() {
+
+        paused = false;
+        if (animation)
+            animation.pause();
+
+        nextIndex = anime.random(0, numberOfElements - 1);
+
+        animation = anime.timeline({
+            easing: 'easeInOutQuad',
+            complete: play
+        }).add({
+            targets: '.stagger-visualizer .cursor',
+            keyframes: [{
+                scale: .75,
+                duration: 120
+            }, {
+                scale: 2.5,
+                duration: 220
+            }, {
+                scale: 1.5,
+                duration: 450
+            }, ],
+            duration: 300
+        }).add({
+            targets: '.stagger-visualizer .dot',
+            keyframes: [{
+                translateX: anime.stagger('-2px', {
+                    grid: grid,
+                    from: index,
+                    axis: 'x'
+                }),
+                translateY: anime.stagger('-2px', {
+                    grid: grid,
+                    from: index,
+                    axis: 'y'
+                }),
+                duration: 100
+            }, {
+                translateX: anime.stagger('4px', {
+                    grid: grid,
+                    from: index,
+                    axis: 'x'
+                }),
+                translateY: anime.stagger('4px', {
+                    grid: grid,
+                    from: index,
+                    axis: 'y'
+                }),
+                scale: anime.stagger([2.6, 1], {
+                    grid: grid,
+                    from: index
+                }),
+                duration: 225
+            }, {
+                translateX: 0,
+                translateY: 0,
+                scale: 1,
+                duration: 1200,
+            }],
+            delay: anime.stagger(80, {
+                grid: grid,
+                from: index
+            })
+        }, 30).add({
+            targets: '.stagger-visualizer .cursor',
+            translateX: {
+                value: anime.stagger(-cell, {
+                    grid: grid,
+                    from: nextIndex,
+                    axis: 'x'
+                })
+            },
+            translateY: {
+                value: anime.stagger(-cell, {
+                    grid: grid,
+                    from: nextIndex,
+                    axis: 'y'
+                })
+            },
+            scale: 1.5,
+            easing: 'cubicBezier(.075, .2, .165, 1)'
+        }, '-=800')
+
+        index = nextIndex;
+
+    }
+
+    function pause() {
+
+        if (paused)
+            return;
+        paused = true;
+        if (animation)
+            animation.pause();
+
+        animation = anime.timeline({
+            easing: 'easeInOutQuad',
+            duration: 100
+        }).add({
+            targets: '.cursor',
+            translateX: {
+                value: anime.stagger(-cell, {
+                    grid: grid,
+                    from: index,
+                    axis: 'x'
+                })
+            },
+            translateY: {
+                value: anime.stagger(-cell, {
+                    grid: grid,
+                    from: index,
+                    axis: 'y'
+                })
+            },
+            scale: 1,
+        }).add({
+            targets: '.stagger-visualizer .dot',
+            translateX: 0,
+            translateY: 0,
+            scale: 1,
+            delay: anime.stagger(50, {
+                grid: grid,
+                from: index
+            })
+        }, 0)
+
+    }
+
+    isElementInViewport(staggerVisualizerEl, play, pause);
+
+    return {
+        play: play,
+        pause: pause
+    }
+
+}
+)();*/
+</script>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+
+    <script src="header.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="header"></div>
+        <div id="view1" class="text-center">
+            <div id="top"><span>A genius who develops</span></div>
+            <div id="bottom">
+                <span>State-of-the-art technology</span>
+                <br />
+            </div>
+            <br>
+            <br>
+            <br>
+            <div id="downArrow">
+                <img src="https://png.icons8.com/ios/long-arrow-down/B3A479/100" />
+                <br />
+                <span>Click or Scroll</span>
+            </div>
+        </div>
+        <div id="view2" class="text-center">
+            <div id="screen">
+                <span>is liken to a swordsmith</span>
+                <div id="downArrow2">
+                    <img src="https://png.icons8.com/ios/long-arrow-down/B3A479/100" />
+                    <br />
+                    <span>Click or Scroll</span>
+                </div>
+            </div>
+        </div>
+        <div id="view3" class="text-center">
+            <div id="top">
+                <span>who would very much need a great sword maestro to master the sword to its fullest
+                    potential</span>
+            </div>
+            <br />
+            <div id="backgroundBody"></div>
+            <div id="downArrow3">
+                <img src="https://png.icons8.com/ios/long-arrow-down/B3A479/100" />
+                <br />
+                <span>Click or Scroll</span>
+            </div>
+        </div>
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+</body>
+<style>
+    body {
+        background-color: #17464E;
+
+    }
+
+    #view1 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        font-size: 50px;
+    }
+
+    #top {
+        color: white;
+    }
+
+    #bottom {
+        color: white;
+    }
+
+    #downArrow {
+        color: #B3A479;
+    }
+
+    #view2 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #screen {
+        color: #B3A479;
+    }
+
+    #downArrow2 {
+        color: #B3A479;
+    }
+
+    #view3 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    #backgroundBOdy {
+        color: #B3A479;
+    }
+
+    #downArrow3 {
+        color: #B3A479;
+    }
+</style>
+<script>
+    $("document").ready(() => {
+        //$("#view1").hide();
+        $("#view2").hide();
+        $("#view3").hide();
+    })
+    $("#downArrow").click(() => {
+        $("#view1").toggle();
+        $("#view2").toggle();
+    })
+    $("#downArrow2").click(() => {
+        $("#view2").toggle();
+        $("#view3").toggle();
+    })
+
+    $(window).scroll(() => {
+        /*if($("#view1").is(":visible")){
+            console.log("Clear and next")
+            $("#view1").fadeOut();
+            $("#view2").fadeIn();
+        }
+        else if($("#view2").is(":visible")){
+            console.log("Clear and next");
+            $("#view2").fadeOut();
+            $("#view3").fadeIn();
+        }*/
+        //console.log("Scroll!")
+    })
+</script>
+
+<script>
+    var c = document.getElementById("hexagon");
+    var ctx = c.getContext("2d");
+    /*ctx.moveTo(0,0);
+    ctx.lineTo(window.innerWidth, 100);
+    ctx.stroke();*/
+    /*var viewportwidth;
+    var viewportheight;
+
+    // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
+
+    if (typeof window.innerWidth != "undefined") {
+        (viewportwidth = window.innerWidth), (viewportheight = window.innerHeight);
+    }
+
+    // IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
+    else if (
+        typeof document.documentElement != "undefined" &&
+        typeof document.documentElement.clientWidth != "undefined" &&
+        document.documentElement.clientWidth != 0
+    ) {
+        (viewportwidth = document.documentElement.clientWidth),
+        (viewportheight = document.documentElement.clientHeight);
+    }
+
+    // older versions of IE
+    else {
+        (viewportwidth = document.getElementsByTagName("body")[0].clientWidth),
+        (viewportheight = document.getElementsByTagName("body")[0].clientHeight);
+    }
+
+    var w = viewportwidth;
+    var x = (w * sqrt(3)) / 6;
+    ctx.moveTo(0,0);
+    ctx.lineTo(200, 200);*/
+    /*ctx.moveTo(100, 0);
+    ctx.lineTo(x * sqrt(3), 1 * x);*/
+    //ctx.stroke();
+    // ctx.lineTo(x*sqrt(3), -3*x);
+</script>
+
+</html>

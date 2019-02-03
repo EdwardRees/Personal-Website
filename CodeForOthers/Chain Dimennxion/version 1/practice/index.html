@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chain Dimennxion</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="options" class="row">
+            <button class="btn btn-success" onclick="showMenu()">Menu</button>
+            <button class="btn btn-success" onclick="showAnimations()">Animations</button>
+            <button class="btn btn-success" onclick="showOption1()">Show Option 1</button>
+        </div>
+        <br />
+        <div id="menu" class="text-left">
+            <div id="option1">
+                <h1>Option 1</h1>
+                <p>Option 1 Description</p>
+            </div>
+            <div id="option2">
+                <h1>Option 2</h1>
+                <p>Option 2 Description</p>
+            </div>
+            <div id="option3">
+                <h1>Option 3</h1>
+                <p>Option 3 Description</p>
+            </div>
+            <div id="option4">
+                <h1>Option 4</h1>
+                <p>Option 4 Description</p>
+            </div>
+        </div>
+        <br />
+
+        <div id="animations" class="text-center">
+            <div id="options">
+                <button class="btn btn-success" onclick="animationClick(1)">Animation 1</button>
+                <button class="btn btn-success" onclick="animationClick(2)">Animation 2</button>
+                <button class="btn btn-success" onclick="animationClick(3)">Animation 3</button>
+                <button class="btn btn-success" onclick="animationClick(4)">Animation 4</button>
+                <button class="btn btn-success" onclick="animationClick(5)">Animation 5</button>
+                <button class="btn btn-success" onclick="animationClick(6)">Animation 6</button>
+            </div>
+            <button class="btn btn-danger" onclick="animationClick('reset')">Reset</button>
+
+            <div id="circle"></div>
+        </div>
+        <div id="option1View" class="text-center">
+            <h1>Hello World!</h1>
+        </div>
+    </div>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+</body>
+
+<style>
+    body {
+        background-color: #606060;
+    }
+
+    #menu h1 {
+        text-transform: uppercase;
+        font-size: 120px;
+        font-weight: 700;
+        line-height: 100%;
+        width: 100%;
+    }
+
+    #menu {
+        width: 100%;
+        line-height: 100%;
+    }
+
+
+    #circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: relative;
+        background-color: blue;
+    }
+
+    #options {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+    }
+
+    #option1View {
+    }
+
+    .animation1 {
+        animation: ani1 5s both;
+    }
+
+    .animation2 {
+        animation: ani2 5s both infinite;
+    }
+
+    .animation3 {
+        animation: ani3 5s both;
+    }
+
+
+    @keyframes ani1 {
+        from {
+            background-color: #606060;
+        }
+
+        to {
+            background-color: #f8f8f8;
+        }
+    }
+
+    @keyframes ani2 {
+        0% {
+            left: 0px;
+            top: 0px;
+        }
+
+        25% {
+            left: 200px;
+            top: 0px;
+        }
+
+        50% {
+            top: 200px;
+            left: 200px;
+        }
+
+        75% {
+            top: 200px;
+            left: 0px;
+        }
+
+        100% {
+            top: 0px;
+            left: 0px;
+        }
+    }
+
+    @keyframes ani3 {
+        0% {}
+
+        100% {}
+    }
+
+    .shown {
+        color: #f8f8f8;
+    }
+
+    .hidden {
+        color: #505050;
+    }
+</style>
+
+<script>
+    const showMenu = () => {
+        $("#menu").toggle();
+        if ($("#animations").is(':visible')) {
+            $("#animations").hide();
+        }
+        if ($("#option1View").is(":visible")) {
+            $("#option1View").hide();
+        }
+    }
+    const showAnimations = () => {
+        $("#animations").toggle();
+        if ($("#menu").is(":visible")) {
+            $("#menu").hide();
+        }
+        if ($("#option1View").is(":visible")) {
+            $("#option1View").hide();
+        }
+    }
+    const showOption1 = () => {
+        $("#option1View").toggle();
+
+        if ($("#animations").is(':visible')) {
+            $("#animations").hide();
+        }
+        if ($("#menu").is(":visible")) {
+            $("#menu").hide();
+        }
+
+
+    }
+</script>
+<script>
+    $("document").ready(() => {
+        $("#circle").hide();
+        $("#animations").hide();
+        $("#option1").toggleClass("shown");
+        $("#option2").toggleClass("shown");
+        $("#option3").toggleClass("shown");
+        $("#option4").toggleClass("shown");
+        $("p").hide();
+        $("#menu").hide();
+        //$("#option1View").hide();
+    });
+
+    $("#option1").hover(() => {
+        $("#option1 p").toggle();
+        $("#option2").toggleClass("hidden");
+        $("#option3").toggleClass("hidden");
+        $("#option4").toggleClass("hidden");
+    })
+    $("#option2").hover(() => {
+        $("#option2 p").toggle();
+        $("#option3").toggleClass("hidden");
+        $("#option4").toggleClass("hidden");
+        $("#option1").toggleClass("hidden");
+    })
+    $("#option3").hover(() => {
+        $("#option3 p").toggle();
+        $("#option4").toggleClass("hidden");
+        $("#option1").toggleClass("hidden");
+        $("#option2").toggleClass("hidden");
+    })
+    $("#option4").hover(() => {
+        $("#option4 p").toggle();
+        $("#option1").toggleClass("hidden");
+        $("#option2").toggleClass("hidden");
+        $("#option3").toggleClass("hidden");
+    })
+
+    const clearAnimations = () => {
+        $("#container").removeClass("animation1 animation3");
+        $("#circle").removeClass("animation2");
+        $("#circle").hide();
+    }
+
+    const animationClick = val => {
+        switch (val) {
+            case 1:
+                $("body").toggleClass("animation1");
+                //alert("Clicked 1!");
+                break;
+            case 2:
+                //$("#circle").show();
+                $("#circle").toggle();
+                $("#circle").toggleClass("animation2");
+                //alert("Clicked 2!");
+                break;
+            case 3:
+                clearAnimations();
+                alert("Clicked 3!");
+                break;
+            case 4:
+                clearAnimations();
+                alert("Clicked 4!")
+                break;
+            case 5:
+                clearAnimations();
+                alert("Clicked 5!")
+                break;
+            case 6:
+                clearAnimations();
+                alert("Clicked 6!")
+                break;
+            case 'reset':
+                clearAnimations();
+                break;
+            default:
+                //clearAnimations();
+                break;
+        }
+        //alert("Clicked " + val);
+    }
+</script>
+
+</html>

@@ -1,0 +1,36 @@
+body {
+    background-color: #17464E;
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    color: #B3A479;
+}
+
+
+
+#body h1 {
+    font-size: 90px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #B3A479;
+}
+
+.shown {
+    color: #B3A479;
+}
+
+.hidden {
+    color: #17464E;
+}
+
+nav {
+    color: #B3A479;
+}
+
+.navbar-toggler {
+    background-color: #B3A479;
+}

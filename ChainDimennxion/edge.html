@@ -25,493 +25,611 @@
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
     <script src="./js/header.js"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <script src="./anime/lib/anime.min.js"></script>
+
+    <link rel="stylesheet" href="./bower_components/drawer/dist/css/drawer.css">
+
+    <script src="./bower_components/iscroll/build/iscroll.js"></script>
+    <script src="./bower_components/drawer/dist/js/drawer.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('.drawer').drawer();
+        })
+    </script>
+
 
 </head>
 
-<body>
-    <div class="container">
-        <div id="header"></div>
-        <div id="body">
-            <div id="wrapper">
-                <div class="snappish-main">
+
+<body class="drawer drawer--left">
+    <header role="banner">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span><span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+                <li style="font-size: 15px; color: white; font-weight: 0;">Discover our expertise</li>
+                <li><a href="./edge.html" class="drawer-menu-item">Our Edge</a></li>
+                <li><a href="./404.html" class="drawer-menu-item">Our Projects</a></li>
+                <li><a href="./beliefs.html" class="drawer-menu-item">Our Beliefs</a></li>
+                <li><a href="./404.html" class="drawer-menu-item">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <div class="container">
+            <div class="text-center" style="margin-top: 15px;">
+                <img src="./img/logo.svg">
+                <br>
+                <span style="font-size:10px; color: #B3A479; font-weight: 0">Chain Dimennxion</span>
+
+            </div>
+            <div id="body">
+                <div id="wrapper">
+                    <!-- <div class="snappish-main"> -->
                     <div class="slide1 text-center">
                         <h2>A genius who develops</h2>
-                        <svg height="100%" width="100%" viewbox="0 0 680 680">
-                            <style>
-                                .innertext {
-                                    font: 40px sans-serif;
-                                    fill: #B3A479;
-                                }
-                            </style>
-                            <rect>
-                                <animate id="dummylg" begin="0;dummylg.end" dur="8s" attributeName="visibility" from="hide"
-                                    to="hide"></animate>
-                            </rect>
-                            <rect>
-                                <animate id="dummymd" begin="0;dummymd.end" dur="10s" attributeName="visibility" from="hide"
-                                    to="hide"></animate>
-                            </rect>
-                            <rect>
-                                <animate id="dummysm" begin="0;dummysm.end" dur="12s" attributeName="visibility" from="hide"
-                                    to="hide"></animate>
-                            </rect>
+                        <svg height="50%" width="50%" viewBox="0 0 150 150">
+                            <svg height="auto" width="auto" viewbox="0 0 680 680">
+                                <!-- <g transform="scale(0.5) translate(340, 340)"> -->
 
-                            <!-- A -->
-                            <circle cx="340" cy="65" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="340" cy="30" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="340" cy="10" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
+                                <style>
+                                    .innertext {
+                                        font: 40px sans-serif;
+                                        fill: #B3A479;
+                                    }
+                                </style>
+                                <rect>
+                                    <animate id="dummy1" begin="0;dummy9.end" dur="8s" attributeName="visibility" from="hide"
+                                        to="hide"></animate>
+                                </rect>
+                                <rect>
+                                    <animate id="dummy2" begin="1;dummy1.end" dur="15s" attributeName="visibility" from="hide"
+                                        to="hide"></animate>
+                                </rect>
+                                <rect>
+                                    <animate id="dummy3" begin="2;dummy2.end" dur="20s" attributeName="visibility" from="hide"
+                                        to="hide"></animate>
+                                </rect>
 
+                                <rect>
+                                    <animate id="dummy4" begin="dummy1.end;dummy3.end" dur="25s" attributeName="visibility"
+                                        from="hide" to="hide"></animate>
+                                </rect>
+                                <rect>
+                                    <animate id="dummy5" begin="19;dummy4.end" dur="30s" attributeName="visibility"
+                                        from="hide" to="hide"></animate>
+                                </rect>
+                                <rect>
+                                    <animate id="dummy6" begin="dummy1.end;dummy5.end" dur="35s" attributeName="visibility"
+                                        from="hide" to="hide"></animate>
+                                </rect>
 
+                                <rect>
+                                    <animate id="dummy7" begin="10;dummy6.end" dur="40s" attributeName="visibility"
+                                        from="hide" to="hide"></animate>
+                                </rect>
+                                <rect>
+                                    <animate id="dummy8" begin="dummy2.end;dummy7.end" dur="45s" attributeName="visibility"
+                                        from="hide" to="hide"></animate>
+                                </rect>
+                                <rect>
+                                    <animate id="dummy9" begin="dummy6.end;dummy8.end" dur="50s" attributeName="visibility"
+                                        from="hide" to="hide"></animate>
+                                </rect>
 
-                            <!-- A to B -->
-                            <circle cx="390.9" cy="80" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="408.4" cy="49.7" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="418.4" cy="32.4" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="434.2" cy="100.6" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="451.9" cy="69.9" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="461.9" cy="52.6" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="477.9" cy="120.6" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="495.4" cy="90.1" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="505.4" cy="72.8" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="521.4" cy="140.6" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="538.9" cy="110" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="548.9" cy="93" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="564.9" cy="160.8" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="582.4" cy="130" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="592.4" cy="110" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
+                                <!-- A -->
+                                <circle cx="340" cy="65" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy6.begin+18" />
+                                </circle>
+                                <circle cx="340" cy="30" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+25" />
+                                </circle>
+                                <circle cx="340" cy="10" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+29" />
+                                </circle>
 
 
 
+                                <!-- A to B -->
+                                <circle cx="390.9" cy="80" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy4.begin+8" />
+                                </circle>
+                                <circle cx="408.4" cy="49.7" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+20" />
+                                </circle>
+                                <circle cx="418.4" cy="32.4" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+1" />
+                                </circle>
 
-                            <!-- B -->
-                            <circle cx="611.6" cy="190" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="641.9" cy="180.47" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="659.2" cy="170.47" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
+                                <circle cx="434.2" cy="100.6" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy5.begin+7" />
+                                </circle>
+                                <circle cx="451.9" cy="69.9" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy6.begin+10" />
+                                </circle>
+                                <circle cx="461.9" cy="52.6" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy7.begin+11" />
+                                </circle>
 
+                                <circle cx="477.9" cy="120.6" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+19" />
+                                </circle>
+                                <circle cx="495.4" cy="90.1" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+17" />
+                                </circle>
+                                <circle cx="505.4" cy="72.8" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+12" />
+                                </circle>
 
-                            <!-- B to C -->
-                            <circle cx="621.6" cy="245" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="655.9" cy="245" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="675" cy="245" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
+                                <circle cx="521.4" cy="140.6" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy4.begin+19" />
+                                </circle>
+                                <circle cx="538.9" cy="110" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+17" />
+                                </circle>
+                                <circle cx="548.9" cy="93" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+26" />
+                                </circle>
 
-                            <circle cx="621.6" cy="290" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="655.9" cy="290" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="675" cy="290" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="621.6" cy="335" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="655.9" cy="335" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="675" cy="335" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="621.6" cy="380" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="655.9" cy="380" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="675" cy="380" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="621.6" cy="425" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="655.9" cy="425" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="675" cy="425" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-
-                            <!-- C -->
-                            <circle cx="611.65" cy="487" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="641.9" cy="504.5" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="659.2" cy="514.5" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-
-                            <!-- C to D -->
-                            <circle cx="568.15" cy="517" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="590" cy="552" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="605" cy="575" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-
-                            <circle cx="524" cy="537.2" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="545" cy="572" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="560" cy="595" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="481" cy="557.2" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="500" cy="592" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="512" cy="615" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="436" cy="577.2" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="455" cy="612" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="465" cy="635" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="391" cy="597.2" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="410" cy="632" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="420" cy="655" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-
-                            <!-- D -->
-                            <circle cx="340" cy="615" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="340" cy="650" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="340" cy="670" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <!-- D to E -->
-                            <circle cx="290" cy="595" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="275" cy="630" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="264" cy="650" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-
-                            <circle cx="245" cy="575" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="230" cy="610" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="220" cy="630" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-
-                            <circle cx="200" cy="555" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="185" cy="590" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="175" cy="610" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-
-                            <circle cx="155" cy="535" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="140" cy="570" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="130" cy="590" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="110" cy="515" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="95" cy="550" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="85" cy="570" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <!-- E -->
-                            <circle cx="68.35" cy="487.03" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="38.03" cy="504.5" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="20.7" cy="514.5" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <!-- E to F -->
-                            <circle cx="62.35" cy="245" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="27.05" cy="245" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="10" cy="245" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="62.35" cy="290" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="27.05" cy="290" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="10" cy="290" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="62.35" cy="335" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="27.05" cy="335" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="10" cy="335" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-
-                            <circle cx="62.35" cy="380" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="27.05" cy="380" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="10" cy="380" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="62.35" cy="425" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="27.05" cy="425" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="10" cy="425" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <!-- F -->
-                            <circle cx="68.35" cy="192.97" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="38.03" cy="175.47" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="20.7" cy="165.47" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <!-- F to A -->
-                            <circle cx="109" cy="160.8" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="99" cy="129.7" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="89" cy="110" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-
-                            <circle cx="154" cy="140.6" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="144" cy="109.7" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="134" cy="93" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="199" cy="120.6" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="189" cy="89.7" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="179" cy="72.8" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
-
-                            <circle cx="244" cy="100.6" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="234" cy="69.7" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="224" cy="52.6" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
+                                <circle cx="564.9" cy="160.8" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+18" />
+                                </circle>
+                                <circle cx="582.4" cy="130" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy5.begin+12" />
+                                </circle>
+                                <circle cx="592.4" cy="110" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+29" />
+                                </circle>
 
 
 
-                            <circle cx="289" cy="80" r="20" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummylg.begin" />
-                            </circle>
-                            <circle cx="279" cy="49.7" r="10" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummymd.begin+3" />
-                            </circle>
-                            <circle cx="269" cy="32.4" r="5" fill="#B3A479">
-                                <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummysm.begin+5" />
-                            </circle>
+
+                                <!-- B -->
+                                <circle cx="611.6" cy="190" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+16" />
+                                </circle>
+                                <circle cx="641.9" cy="180.47" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy3.begin+29" />
+                                </circle>
+                                <circle cx="659.2" cy="170.47" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy5.begin+28" />
+                                </circle>
+
+
+                                <!-- B to C -->
+                                <circle cx="621.6" cy="245" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+19" />
+                                </circle>
+                                <circle cx="655.9" cy="245" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+20" />
+                                </circle>
+                                <circle cx="675" cy="245" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+14" />
+                                </circle>
+
+                                <circle cx="621.6" cy="290" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy7.begin+30" />
+                                </circle>
+                                <circle cx="655.9" cy="290" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+34" />
+                                </circle>
+                                <circle cx="675" cy="290" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+20" />
+                                </circle>
+
+                                <circle cx="621.6" cy="335" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy3.begin+37" />
+                                </circle>
+                                <circle cx="655.9" cy="335" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy7.begin+1" />
+                                </circle>
+                                <circle cx="675" cy="335" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+20" />
+                                </circle>
+
+                                <circle cx="621.6" cy="380" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+10" />
+                                </circle>
+                                <circle cx="655.9" cy="380" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+30" />
+                                </circle>
+                                <circle cx="675" cy="380" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+20" />
+                                </circle>
+
+                                <circle cx="621.6" cy="425" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+20" />
+                                </circle>
+                                <circle cx="655.9" cy="425" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+19" />
+                                </circle>
+                                <circle cx="675" cy="425" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+25" />
+                                </circle>
+
+
+                                <!-- C -->
+                                <circle cx="611.65" cy="487" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+15" />
+                                </circle>
+                                <circle cx="641.9" cy="504.5" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+2" />
+                                </circle>
+                                <circle cx="659.2" cy="514.5" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+25" />
+                                </circle>
+
+
+                                <!-- C to D -->
+                                <circle cx="568.15" cy="517" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+18" />
+                                </circle>
+                                <circle cx="590" cy="552" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+10" />
+                                </circle>
+                                <circle cx="605" cy="575" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+2" />
+                                </circle>
+
+
+                                <circle cx="524" cy="537.2" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy3.begin+19" />
+                                </circle>
+                                <circle cx="545" cy="572" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy3.begin+1" />
+                                </circle>
+                                <circle cx="560" cy="595" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy3.begin+30" />
+                                </circle>
+
+                                <circle cx="481" cy="557.2" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+38" />
+                                </circle>
+                                <circle cx="500" cy="592" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+20" />
+                                </circle>
+                                <circle cx="512" cy="615" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+3" />
+                                </circle>
+
+                                <circle cx="436" cy="577.2" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin" />
+                                </circle>
+                                <circle cx="455" cy="612" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+3" />
+                                </circle>
+                                <circle cx="465" cy="635" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+5" />
+                                </circle>
+
+                                <circle cx="391" cy="597.2" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+1" />
+                                </circle>
+                                <circle cx="410" cy="632" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+10" />
+                                </circle>
+                                <circle cx="420" cy="655" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+18" />
+                                </circle>
+
+
+                                <!-- D -->
+                                <circle cx="340" cy="615" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy4.begin+5" />
+                                </circle>
+                                <circle cx="340" cy="650" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy4.begin+15" />
+                                </circle>
+                                <circle cx="340" cy="670" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy4.begin+2" />
+                                </circle>
+
+                                <!-- D to E -->
+                                <circle cx="290" cy="595" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy5.begin+19" />
+                                </circle>
+                                <circle cx="275" cy="630" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy5.begin+1" />
+                                </circle>
+                                <circle cx="264" cy="650" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy5.begin+23" />
+                                </circle>
+
+
+                                <circle cx="245" cy="575" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+1" />
+                                </circle>
+                                <circle cx="230" cy="610" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+18" />
+                                </circle>
+                                <circle cx="220" cy="630" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+27" />
+                                </circle>
+
+
+                                <circle cx="200" cy="555" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+3" />
+                                </circle>
+                                <circle cx="185" cy="590" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+10" />
+                                </circle>
+                                <circle cx="175" cy="610" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy2.begin+28" />
+                                </circle>
+
+
+                                <circle cx="155" cy="535" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy4.begin+27" />
+                                </circle>
+                                <circle cx="140" cy="570" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy4.begin+2" />
+                                </circle>
+                                <circle cx="130" cy="590" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy4.begin+39" />
+                                </circle>
+
+                                <circle cx="110" cy="515" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy7.begin+1" />
+                                </circle>
+                                <circle cx="95" cy="550" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy7.begin+39" />
+                                </circle>
+                                <circle cx="85" cy="570" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy7.begin+15" />
+                                </circle>
+
+                                <!-- E -->
+                                <circle cx="68.35" cy="487.03" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy5.begin+5" />
+                                </circle>
+                                <circle cx="38.03" cy="504.5" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy5.begin+15" />
+                                </circle>
+                                <circle cx="20.7" cy="514.5" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy5.begin+20" />
+                                </circle>
+
+                                <!-- E to F -->
+                                <circle cx="62.35" cy="245" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+9" />
+                                </circle>
+                                <circle cx="27.05" cy="245" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+15" />
+                                </circle>
+                                <circle cx="10" cy="245" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+1" />
+                                </circle>
+
+                                <circle cx="62.35" cy="290" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy3.begin+3" />
+                                </circle>
+                                <circle cx="27.05" cy="290" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy3.begin+10" />
+                                </circle>
+                                <circle cx="10" cy="290" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy3.begin+27" />
+                                </circle>
+
+                                <circle cx="62.35" cy="335" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+5" />
+                                </circle>
+                                <circle cx="27.05" cy="335" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+17" />
+                                </circle>
+                                <circle cx="10" cy="335" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+21" />
+                                </circle>
+
+
+                                <circle cx="62.35" cy="380" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy3.begin+13" />
+                                </circle>
+                                <circle cx="27.05" cy="380" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy3.begin+17" />
+                                </circle>
+                                <circle cx="10" cy="380" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy3.begin+23" />
+                                </circle>
+
+                                <circle cx="62.35" cy="425" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy6.begin+10" />
+                                </circle>
+                                <circle cx="27.05" cy="425" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy6.begin+32" />
+                                </circle>
+                                <circle cx="10" cy="425" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy6.begin+20" />
+                                </circle>
+
+                                <!-- F -->
+                                <circle cx="68.35" cy="192.97" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+1" />
+                                </circle>
+                                <circle cx="38.03" cy="175.47" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+20" />
+                                </circle>
+                                <circle cx="20.7" cy="165.47" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+40" />
+                                </circle>
+
+                                <!-- F to A -->
+                                <circle cx="109" cy="160.8" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+1" />
+                                </circle>
+                                <circle cx="99" cy="129.7" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+10" />
+                                </circle>
+                                <circle cx="89" cy="110" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy1.begin+6" />
+                                </circle>
+
+
+                                <circle cx="154" cy="140.6" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+3" />
+                                </circle>
+                                <circle cx="144" cy="109.7" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+9" />
+                                </circle>
+                                <circle cx="134" cy="93" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+35" />
+                                </circle>
+
+                                <circle cx="199" cy="120.6" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+2" />
+                                </circle>
+                                <circle cx="189" cy="89.7" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+12" />
+                                </circle>
+                                <circle cx="179" cy="72.8" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy8.begin+20" />
+                                </circle>
+
+                                <circle cx="244" cy="100.6" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+31" />
+                                </circle>
+                                <circle cx="234" cy="69.7" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+19" />
+                                </circle>
+                                <circle cx="224" cy="52.6" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+28" />
+                                </circle>
 
 
 
-                            <polygon class="hexagon" points="340,90 ,590, 215.4700538379, 590, 474.5299461621, 340, 580, 90,474.5299461621, 90,215.4700538379"
-                                style="fill: none; stroke: #B3A479; stroke-width: 1"></polygon>
-                            <text class="innertext" x="30%" y="45%">State-of-the-art</text>
-                            <text class="innertext" x="35%" y="55%">technology</text>
+                                <circle cx="289" cy="80" r="20" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin" />
+                                </circle>
+                                <circle cx="279" cy="49.7" r="10" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+3" />
+                                </circle>
+                                <circle cx="269" cy="32.4" r="5" fill="#B3A479">
+                                    <animate attributeName="fill" values="#b3a479; #132D32; #b3a479" dur="5s" begin="dummy9.begin+5" />
+                                </circle>
+
+
+
+                                <polygon class="hexagon" points="340,90 ,590, 215.4700538379, 590, 474.5299461621, 340, 580, 90,474.5299461621, 90,215.4700538379"
+                                    style="fill: none; stroke: #B3A479; stroke-width: 1"></polygon>
+                                <text class="innertext" x="30%" y="45%">State-of-the-art</text>
+                                <text class="innertext" x="35%" y="55%">technology</text>
+                                <!-- </g> -->
+                            </svg>
                         </svg>
 
-                        <svg width="20%" height="20%" viewBox="0 0 36 69" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="Our-Edge_-2" transform="translate(-187.000000, -780.000000)" stroke="#B2A47C">
-                                    <g id="Group" transform="translate(187.000000, 780.000000)">
-                                        <path d="M18,0.0746131043 L18,68.6624304" id="Path-2"></path>
-                                        <path d="M0,68.4913729 L17.5,47.5" id="Path" transform="translate(9.000000, 58.000000) scale(-1, 1) translate(-9.000000, -58.000000) "></path>
-                                        <path d="M18,68.4913729 L35.5,47.5" id="Path"></path>
+                        <!-- <svg width="20%" height="20%" viewBox="0 0 36 69" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Our-Edge_-2" transform="translate(-187.000000, -780.000000)" stroke="#B2A47C">
+                                        <g id="Group" transform="translate(187.000000, 780.000000)">
+                                            <path d="M18,0.0746131043 L18,68.6624304" id="Path-2"></path>
+                                            <path d="M0,68.4913729 L17.5,47.5" id="Path" transform="translate(9.000000, 58.000000) scale(-1, 1) translate(-9.000000, -58.000000) "></path>
+                                            <path d="M18,68.4913729 L35.5,47.5" id="Path"></path>
+                                        </g>
                                     </g>
                                 </g>
-                            </g>
-                        </svg>
+                            </svg> -->
                     </div>
                     <div class="slide2 text-center">
-                        <svg width="100%" height="100%" viewBox="0 0 680 680">
-                            <g stroke="#B3A479" fill="none" stroke-width="2">
-                                <circle cx="340" cy="340" r="200">
-                                </circle>
-                                <g style="transform-origin:center;" id="sword">
-                                    <circle cx="340" cy="500" r="20"></circle>
+                        <svg width="75%" height="75%" viewBox="0 0 150 150">
 
-                                    <line x1=322 y1=490 x2=315 y2=440></line>
-                                    <line x1=357 y1=490 x2=364 y2=440></line>
+                            <svg width="100%" height="100%" viewBox="0 0 150 150">
+                                <rect>
+                                    <animate id="lineSet1" begin="0;lineSet3.end" dur="8s" attributeName="visibility"
+                                        from="hide" to="hide"></animate>
+                                </rect>
+                                <rect>
+                                    <animate id="lineSet2" begin="2;lineSet1.end" dur="16s" attributeName="visibility"
+                                        from="hide" to="hide"></animate>
+                                </rect>
+                                <rect>
+                                    <animate id="lineSet3" begin="lineSet1.end;lineSet2.end" dur="24s" attributeName="visibility"
+                                        from="hide" to="hide"></animate>
+                                </rect>
+                                <g stroke="#B3A479" fill="none" stroke-width="0.25">
+                                    <line x1=0 y1=0 x2=58 y2=58>
+                                        <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet1.begin"></animate>
+                                    </line>
 
-                                    <line x1=270 y1=440 x2=409 y2=440></line>
+                                    <line x1=75 y1=0 x2=75 y2=50>
+                                        <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet2.begin+3"></animate>
+                                    </line>
 
-                                    <line x1=270 y1=440 x2=270 y2=430></line>
-                                    <line x1=409 y1=440 x2=409 y2=430></line>
+                                    <line x1=150 y1=0 x2=92 y2=58>
+                                        <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet3.begin+9"></animate>
+                                    </line>
 
-                                    <line x1=340 y1=420 x2=409 y2=430></line>
-                                    <line x1=340 y1=420 x2=270 y2=430></line>
+                                    <line x1=150 y1=150 x2=92 y2=92>
+                                        <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet1.begin+6"></animate>
+                                    </line>
 
-                                    <line x1=340 y1=150 x2=315 y2=184></line>
-                                    <line x1=340 y1=150 x2=365 y2=184></line>
+                                    <line x1=75 y1=150 x2=75 y2=100>
+                                        <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet2.begin+2"></animate>
+                                    </line>
 
-                                    <line x1=365 y1=184 x2=365 y2=424></line>
-                                    <line x1=315 y1=184 x2=315 y2=424></line>
+                                    <line x1=0 y1=150 x2=58 y2=92>
+                                        <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet3.begin+8"></animate>
+                                    </line>
 
+                                    <line x1=0 y1=75 x2=50 y2=75>
+                                        <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet1.begin+5"></animate>
+                                    </line>
+
+                                    <line x1=150 y1=75 x2=100 y2=75>
+                                        <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet2.begin+9"></animate>
+                                    </line>
                                 </g>
-                            </g>
+                                <svg width="auto" height="auto" viewBox="0 0 680 680">
+                                    <g stroke="#B3A479" fill="none" stroke-width="2" transform="scale(0.5), translate(340, 340)">
+                                        <circle cx="340" cy="340" r="200">
+                                        </circle>
+                                        <g style="transform-origin:center;" id="sword">
+                                            <circle cx="340" cy="500" r="20"></circle>
+
+                                            <line x1=322 y1=490 x2=315 y2=440></line>
+                                            <line x1=357 y1=490 x2=364 y2=440></line>
+
+                                            <line x1=270 y1=440 x2=409 y2=440></line>
+
+                                            <line x1=270 y1=440 x2=270 y2=430></line>
+                                            <line x1=409 y1=440 x2=409 y2=430></line>
+
+                                            <line x1=340 y1=420 x2=409 y2=430></line>
+                                            <line x1=340 y1=420 x2=270 y2=430></line>
+
+                                            <line x1=340 y1=150 x2=315 y2=184></line>
+                                            <line x1=340 y1=150 x2=365 y2=184></line>
+
+                                            <line x1=365 y1=184 x2=365 y2=424></line>
+                                            <line x1=315 y1=184 x2=315 y2=424></line>
+
+                                        </g>
+                                    </g>
+                                </svg>
+                            </svg>
                         </svg>
-                        <svg width="20%" height="20%" viewBox="0 0 36 69" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="Our-Edge_-2" transform="translate(-187.000000, -780.000000)" stroke="#B2A47C">
-                                    <g id="Group" transform="translate(187.000000, 780.000000)">
-                                        <path d="M18,0.0746131043 L18,68.6624304" id="Path-2"></path>
-                                        <path d="M0,68.4913729 L17.5,47.5" id="Path" transform="translate(9.000000, 58.000000) scale(-1, 1) translate(-9.000000, -58.000000) "></path>
-                                        <path d="M18,68.4913729 L35.5,47.5" id="Path"></path>
+                        <!-- <svg width="20%" height="20%" viewBox="0 0 36 69" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Our-Edge_-2" transform="translate(-187.000000, -780.000000)" stroke="#B2A47C">
+                                        <g id="Group" transform="translate(187.000000, 780.000000)">
+                                            <path d="M18,0.0746131043 L18,68.6624304" id="Path-2"></path>
+                                            <path d="M0,68.4913729 L17.5,47.5" id="Path" transform="translate(9.000000, 58.000000) scale(-1, 1) translate(-9.000000, -58.000000) "></path>
+                                            <path d="M18,68.4913729 L35.5,47.5" id="Path"></path>
+                                        </g>
                                     </g>
                                 </g>
-                            </g>
-                        </svg>
+                            </svg> -->
 
                     </div>
 
-
                     <div class="slide3">
+
+                    </div>
+
+                    <div class="slide4">
+                        <!-- <svg width="100%" height="100%" viewBox="0 0 500 500"> -->
 
                         <svg width="100%" height="100%" viewBox="0 0 680 680" version="1.1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -538,7 +656,7 @@
 
                                     <path d="M267.859051,647.017207 C289.133223,659 298.718002,676.575343 298.718002,706.633301 C298.718002,724.027127 295.008238,731.428421 289.133223,736.344323 C282.752558,741.683328 276.836281,746.180048 267.859051,741.420276 C262.236988,738.439431 262.07207,729.402429 267.859051,724.895446 C289.133223,708.326817 319.476023,727 327.986728,746.180048 C342.959775,779.923877 329.024867,809.804342 289.133223,830.009597 C285.259853,831.971472 280.935262,832.873376 276.836281,834.305266"
                                         class="path" stroke="#B2A47C" stroke-dasharray="10" transform="translate(100 -200) translate(20 50)
-                                translate(-30 35) translate(-10 -10)"></path>
+                                    translate(-30 35) translate(-10 -10)"></path>
                                 </g>
                             </g>
                             <g stroke="#B3A479" fill="none" stroke-width="3" transform="scale(0.2) translate(500 500)">
@@ -596,12 +714,16 @@
                                 </g>
                             </g>
                         </svg>
+                        <!-- </svg> -->
                     </div>
                 </div>
+                <!-- </div> -->
             </div>
-        </div>
 
-    </div>
+
+
+        </div>
+    </main>
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

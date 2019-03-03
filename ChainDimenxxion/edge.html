@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chain Dimenxxion | Our Edge</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="bower_components/jquery-snappish/jquery.snappish.css" rel="stylesheet">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script src="bower_components/jquery.event.move/js/jquery.event.move.js"></script>
+    <script src="bower_components/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+    <script src="bower_components/jquery-snappish/jquery.snappish.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+    <script src="./js/header.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <script src="./anime/lib/anime.min.js"></script>
+
+    <link rel="stylesheet" href="./bower_components/drawer/dist/css/drawer.css">
+
+    <script src="./bower_components/iscroll/build/iscroll.js"></script>
+    <script src="./bower_components/drawer/dist/js/drawer.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('.drawer').drawer();
+        })
+    </script>
+
+
+</head>
+
+
+<body class="drawer drawer--left">
+    <header role="banner">
+        <button type="button" class="drawer-toggle drawer-hamburger">
+            <span class="sr-only">toggle navigation</span><span class="drawer-hamburger-icon"></span>
+        </button>
+        <nav class="drawer-nav" role="navigation">
+            <ul class="drawer-menu">
+                <li style="font-size: 15px; color: white; font-weight: 0;">Discover our expertise</li>
+                <li><a href="./edge.html" class="drawer-menu-item">Our Edge</a></li>
+                <li><a href="./projects.html" class="drawer-menu-item">Our Projects</a></li>
+                <li><a href="./beliefs.html" class="drawer-menu-item">Our Beliefs</a></li>
+                <li><a href="./404.html" class="drawer-menu-item">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <div class="container">
+            <div class="text-center" style="margin-top: 15px;">
+                <img src="./img/logo.svg">
+                <br>
+                <span style="font-size:10px; color: #B3A479; font-weight: 0">Chain Dimennxion</span>
+
+            </div>
+            <div id="body">
+                <div id="wrapper">
+                    <!-- <div class="snappish-main"> -->
+                    <div class="slide1 text-center">
+
+
+                        <svg width="75%" height="75%" viewBox="0 0 150 150">
+                            <style>
+                                .topStyle {
+                                    font: 5px sans-serif;
+                                    fill: #bbb;
+                                }
+
+                                .middleStyle {
+                                    font: 5px sans-serif;
+                                    fill: #bbb;
+                                }
+
+                                .bottomStyle {
+                                    font: 5px sans-serif;
+                                    fill: #bbb;
+                                }
+
+                                .boldStyle {
+                                    font-weight: bolder;
+                                    font-style: italic;
+                                }
+                            </style>
+                            <text x="33%" y="15%" class="topStyle">A genius who develops</text>
+                            <text x="22%" y="20%" class="middleStyle">state-of-the-art technology is liken to a</text>
+                            <text x="18%" y="25%" class="bottomStyle boldStyle">swordsmith</text>
+                            <text x="38%" y="25%" class="bottomStyle">who has made a mighty sword</text>
+                            <rect>
+                                <animate id="lineSet1" begin="0;lineSet3.end" dur="8s" attributeName="visibility" from="hide"
+                                    to="hide"></animate>
+                            </rect>
+                            <rect>
+                                <animate id="lineSet2" begin="2;lineSet1.end" dur="16s" attributeName="visibility" from="hide"
+                                    to="hide"></animate>
+                            </rect>
+                            <rect>
+                                <animate id="lineSet3" begin="lineSet1.end;lineSet2.end" dur="24s" attributeName="visibility"
+                                    from="hide" to="hide"></animate>
+                            </rect>
+                            <g stroke="#B3A479" fill="none" stroke-width="0.25">
+                                <line x1=0 y1=0 x2=58 y2=58>
+                                    <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet1.begin"></animate>
+                                </line>
+
+                                <line x1=75 y1=0 x2=75 y2=50>
+                                    <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet2.begin+3"></animate>
+                                </line>
+
+                                <line x1=150 y1=0 x2=92 y2=58>
+                                    <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet3.begin+9"></animate>
+                                </line>
+
+                                <line x1=150 y1=150 x2=92 y2=92>
+                                    <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet1.begin+6"></animate>
+                                </line>
+
+                                <line x1=75 y1=150 x2=75 y2=100>
+                                    <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet2.begin+2"></animate>
+                                </line>
+
+                                <line x1=0 y1=150 x2=58 y2=92>
+                                    <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet3.begin+8"></animate>
+                                </line>
+
+                                <line x1=0 y1=75 x2=50 y2=75>
+                                    <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet1.begin+5"></animate>
+                                </line>
+
+                                <line x1=150 y1=75 x2=100 y2=75>
+                                    <animate attributeName="opacity" values="1;0;1" dur="2s" begin="lineSet2.begin+9"></animate>
+                                </line>
+                            </g>
+
+                            <svg width="auto" height="auto" viewBox="0 0 680 680">
+                                <g stroke="#B3A479" fill="none" stroke-width="2" transform="scale(0.5), translate(340, 340)">
+                                    <circle cx="340" cy="340" r="200">
+                                    </circle>
+                                    <g style="transform-origin:center;" id="sword">
+                                        <circle cx="340" cy="500" r="20"></circle>
+
+                                        <line x1=322 y1=490 x2=315 y2=440></line>
+                                        <line x1=357 y1=490 x2=364 y2=440></line>
+
+                                        <line x1=270 y1=440 x2=409 y2=440></line>
+
+                                        <line x1=270 y1=440 x2=270 y2=430></line>
+                                        <line x1=409 y1=440 x2=409 y2=430></line>
+
+                                        <line x1=340 y1=420 x2=409 y2=430></line>
+                                        <line x1=340 y1=420 x2=270 y2=430></line>
+
+                                        <line x1=340 y1=150 x2=315 y2=184></line>
+                                        <line x1=340 y1=150 x2=365 y2=184></line>
+
+                                        <line x1=365 y1=184 x2=365 y2=424></line>
+                                        <line x1=315 y1=184 x2=315 y2=424></line>
+
+                                    </g>
+                                </g>
+                            </svg>
+                        </svg>
+                    </div>
+
+                    <div class="slide2 text-center">
+                        <svg width="auto" height="auto" viewBox="0 0 340 400">
+                            <svg width="auto" height="auto" viewBox="0 0 680 680">
+                                <style>
+                                    .top {
+                                        font: 15px sans-serif;
+                                        fill: #bbb;
+                                    }
+
+                                    .middle {
+                                        font: 15px sans-serif;
+                                        fill: #bbb;
+                                        font-weight: bolder;
+                                        font-style: italic;
+                                    }
+
+                                    .bottom {
+                                        font: 15px sans-serif;
+                                        font-weight: 1;
+                                        fill: #bbb;
+
+                                    }
+                                </style>
+
+                                <text x="32%" y="10%" class="top">He would very much need a</text>
+                                <text x="35%" y="15%" class="middle">great sword maestro</text>
+                                <text x="25%" y="20%" class="bottom">to master the sword to its fullest potential</text>
+                                <g stroke="#B3A479" fill="none" stroke-width="2" transform="scale(0.15), ">
+                                    <g style="transform-origin:center;" id="sway">
+                                        <circle cx="340" cy="500" r="20"></circle>
+
+                                        <line x1=322 y1=490 x2=315 y2=440></line>
+                                        <line x1=357 y1=490 x2=364 y2=440></line>
+
+                                        <line x1=270 y1=440 x2=409 y2=440></line>
+
+                                        <line x1=270 y1=440 x2=270 y2=430></line>
+                                        <line x1=409 y1=440 x2=409 y2=430></line>
+
+                                        <line x1=340 y1=420 x2=409 y2=430></line>
+                                        <line x1=340 y1=420 x2=270 y2=430></line>
+
+                                        <line x1=340 y1=150 x2=315 y2=184></line>
+                                        <line x1=340 y1=150 x2=365 y2=184></line>
+
+                                        <line x1=365 y1=184 x2=365 y2=424></line>
+                                        <line x1=315 y1=184 x2=315 y2=424></line>
+                                    </g>
+
+                                    <!-- <g transform="translate(150.000000, -120.000000)" stroke="#B2A47C">
+                <g id="Group" transform="translate(187.000000, 780.000000)">
+                    <path d="M18,0.0746131043 L18,68.6624304" id="Path-2"></path>
+                    <path d="M0,68.4913729 L17.5,47.5" id="Path" transform="translate(9.000000, 58.000000) scale(-1, 1) translate(-9.000000, -58.000000) "></path>
+                    <path d="M18,68.4913729 L35.5,47.5" id="Path"></path>
+                </g>
+            </g> -->
+
+                                </g>
+                            </svg>
+                        </svg>
+                    </div>
+
+                    <div class="slide3">
+                        <svg width="100%" height="100%" viewBox="0 0 680 420" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <style>
+                                .upper {
+                                    font: 15px sans-serif;
+                                    font-weight: bolder;
+                                    fill: #bbb;
+                                }
+
+                                .lower {
+                                    font: 15px sans-serif;
+                                    fill: #bbb;
+                                }
+                            </style>
+                            <text class="upper" x="35%" y="20%">
+                                Chain Dimenxxion
+                            </text>
+                            <text class="lower" x="20%" y="25%">
+                                - a sword maestro that adopts technologies for good.
+                            </text>
+                            <g stroke="#B3A479" fill="none" stroke-width="2" transform="scale(0.5) translate(200 200)">
+                                <g style="transform-origin:center;" transform="rotate(-45, 0, 0)">
+
+                                    <circle cx="340" cy="500" r="20"></circle>
+
+                                    <line x1=322 y1=490 x2=315 y2=440></line>
+                                    <line x1=357 y1=490 x2=364 y2=440></line>
+
+                                    <line x1=270 y1=440 x2=409 y2=440></line>
+
+                                    <line x1=270 y1=440 x2=270 y2=430></line>
+                                    <line x1=409 y1=440 x2=409 y2=430></line>
+
+                                    <line x1=340 y1=420 x2=409 y2=430></line>
+                                    <line x1=340 y1=420 x2=270 y2=430></line>
+
+                                    <line x1=340 y1=150 x2=315 y2=184></line>
+                                    <line x1=340 y1=150 x2=365 y2=184></line>
+
+                                    <line x1=365 y1=184 x2=365 y2=424></line>.
+                                    <line x1=315 y1=184 x2=315 y2=424></line>
+
+                                    <path d="M267.859051,647.017207 C289.133223,659 298.718002,676.575343 298.718002,706.633301 C298.718002,724.027127 295.008238,731.428421 289.133223,736.344323 C282.752558,741.683328 276.836281,746.180048 267.859051,741.420276 C262.236988,738.439431 262.07207,729.402429 267.859051,724.895446 C289.133223,708.326817 319.476023,727 327.986728,746.180048 C342.959775,779.923877 329.024867,809.804342 289.133223,830.009597 C285.259853,831.971472 280.935262,832.873376 276.836281,834.305266"
+                                        class="path" stroke="#B2A47C" stroke-dasharray="10" transform="translate(100 -200) translate(20 50)
+                                    translate(-30 35) translate(-10 -10)"></path>
+                                </g>
+                            </g>
+                            <g stroke="#B3A479" fill="none" stroke-width="3" transform="scale(0.2) translate(400 1000)">
+                                <g style="transform-origin:center;" transform="rotate(-45, 0, 0)">
+                                    <circle cx="340" cy="500" r="20"></circle>
+
+                                    <line x1=322 y1=490 x2=315 y2=440></line>
+                                    <line x1=357 y1=490 x2=364 y2=440></line>
+
+                                    <line x1=270 y1=440 x2=409 y2=440></line>
+
+                                    <line x1=270 y1=440 x2=270 y2=430></line>
+                                    <line x1=409 y1=440 x2=409 y2=430></line>
+
+                                    <line x1=340 y1=420 x2=409 y2=430></line>
+                                    <line x1=340 y1=420 x2=270 y2=430></line>
+
+                                    <line x1=340 y1=150 x2=315 y2=184></line>
+                                    <line x1=340 y1=150 x2=365 y2=184></line>
+
+                                    <line x1=365 y1=184 x2=365 y2=424></line>.
+                                    <line x1=315 y1=184 x2=315 y2=424></line>
+                                    <path d="M89.9630681,453 C50.6276495,481.702034 40.5990522,517.611171 60.5992349,548.183533 C68.4585588,560.197328 89.9630681,560.286027 89.9630681,548 C88.5474648,537.55592 74.3431612,538.928476 65.8616103,545.214364 C46.6197838,556.601141 50.7054052,584.883557 55.0791929,596.025937 C58.4018664,604.490566 72.416733,637.229241 110.824449,649"
+                                        class="path2" transform="scale(3) rotate(45) translate(0 -410) translate(110 0)"
+                                        stroke-width="1"></path>
+
+                                </g>
+                            </g>
+
+                            <g stroke="#B3A479" fill="none" stroke-width="2" transform="scale(0.3) translate(2000 300) rotate(90)">
+                                <g style="transform-origin:center;" transform="rotate(-45, 0, 0)">
+                                    <circle cx="340" cy="500" r="20"></circle>
+
+                                    <line x1=322 y1=490 x2=315 y2=440></line>
+                                    <line x1=357 y1=490 x2=364 y2=440></line>
+
+                                    <line x1=270 y1=440 x2=409 y2=440></line>
+
+                                    <line x1=270 y1=440 x2=270 y2=430></line>
+                                    <line x1=409 y1=440 x2=409 y2=430></line>
+
+                                    <line x1=340 y1=420 x2=409 y2=430></line>
+                                    <line x1=340 y1=420 x2=270 y2=430></line>
+
+                                    <line x1=340 y1=150 x2=315 y2=184></line>
+                                    <line x1=340 y1=150 x2=365 y2=184></line>
+
+                                    <line x1=365 y1=184 x2=365 y2=424></line>.
+                                    <line x1=315 y1=184 x2=315 y2=424></line>
+
+
+                                    <path d="M274.237022,553.286027 C274.237022,574.154342 274.574195,583.024856 289.997508,597.961184 C300.636963,608.264703 321.788409,610.845663 353.451848,605.704065"
+                                        class="path" stroke="#B2A47C" stroke-dasharray="10" transform="translate(50 0) translate(0 -20) translate(15 0)"></path>
+
+                                </g>
+                            </g>
+                        </svg>
+                        <!-- </div> -->
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </main>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+</body>
+<script>
+    $("#wrapper").snappish();
+</script>
+<style>
+    .circle1 {
+        border-radius: 50%;
+        background-color: blue;
+        width: 48px;
+        height: 48px;
+    }
+
+    #sway {
+        transform-origin: center;
+        -webkit-animation-name: swaylr;
+        -webkit-animation-duration: 1.5s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: swaylr;
+        -moz-animation-duration: 1.5s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        animation-name: swaylr;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    #sword {
+        transform-origin: center;
+        -webkit-animation-name: rotate;
+        -webkit-animation-duration: 5s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: rotate;
+        -moz-animation-duration: 5s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        animation-name: rotate;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+    }
+
+    @-webkit-keyframes rotate {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+
+        to {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+
+    @-moz-keyframes rotate {
+        from {
+            -moz-transform: rotate(0deg);
+        }
+
+        to {
+            -moz-transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+
+    @-webkit-keyframes swaylr {
+        0% {
+            -webkit-transform: rotate(-45deg);
+        }
+
+        25% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        50% {
+            -webkit-transform: rotate(45deg);
+        }
+
+        75% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(-45deg);
+        }
+    }
+
+    @-moz-keyframes swaylr {
+        0% {
+            -webkit-transform: rotate(-45deg);
+        }
+
+        25% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        50% {
+            -webkit-transform: rotate(45deg);
+        }
+
+        75% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(-45deg);
+        }
+    }
+
+    @keyframes swaylr {
+        0% {
+            -webkit-transform: rotate(-45deg);
+        }
+
+        25% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        50% {
+            -webkit-transform: rotate(45deg);
+        }
+
+        75% {
+            -webkit-transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(-45deg);
+        }
+    }
+
+    .path {
+        stroke-dasharray: 20;
+        animation: dash 20s linear infinite;
+    }
+
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 1000;
+        }
+    }
+
+    .path2 {
+        stroke-dasharray: 10;
+        animation: dash 30s linear infinite;
+    }
+
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 1000;
+        }
+    }
+</style>
+
+
+</html>

@@ -180,10 +180,52 @@ hr.small {
 }
 
 .background {
-    background-color: #f79646;
+    /* background-color: #4682B4; */
+    background-color: #165c7d;;
     color: white;
 }
 
+.institute {
+    text-align: left;
+    font-size: 20px;
+}
+
+.institute .name {
+    font-weight: 600;
+}
+
+
+.institute .degree {
+    font-style: italic;
+}
+
+.left-border {
+    border-left: 5px solid #fff;
+}
+.job {
+ font-size: 20px;
+ line-height: 1.1;
+}
+
+.job .company {
+    
+}
+.job .title {
+    font-weight: 600;
+}
+
+.job .date {
+    color: #606060;
+    font-size: 15px;
+}
+
+.job .location {
+    color: #606060;
+    font-size: 15px;
+}
+.job .desc {
+    color: #555;
+}
 /* Callout */
 
 .callout {
@@ -203,8 +245,14 @@ hr.small {
 .portfolio {
     padding: 50px 0;
 }
+.projects {
+    padding: 50px 0;
+}
 
 .portfolio-item {
+    margin-bottom: 30px;
+}
+.projects-item {
     margin-bottom: 30px;
 }
 
@@ -228,6 +276,13 @@ hr.small {
 }
 
 .call-to-action .btn {
+    margin: 10px;
+}
+
+.skills { 
+    padding: 50px 0;
+}
+.skills .btn {
     margin: 10px;
 }
 
@@ -263,6 +318,10 @@ footer {
 /* Colors */
 .splus_orange {
     color: #F79646;
+}
+
+.blue {
+color: #165c7d;
 }
 
 /* Hover */

@@ -59,6 +59,9 @@
             <li>
                 <a href="#projects" onclick=$( "#menu-close" ).click();>Projects</a>
             </li>
+            <li>
+                <a href="#contact" onclick=$( "menu-close" ).click();>Contact Me!</a>
+            </li>
         </ul>
     </nav>
 
@@ -446,6 +449,30 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section id="contact" class="skills background">
+        <div class="container">
+            <h1 class="text-center">Contact Me!</h1>
+            <form action="https://api-splusgroup.herokuapp.com/send-email-work" method="POST">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name" class="col">Name: </label>
+                        <input type="text" name="name" class="form-control col" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col">Email: </label>
+                        <input type="email" name="email" class="form-control col" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="col">Message: </label>
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" value="Submit" class="btn btn-lg btn-success">
+                    </div>
+                </div>
+            </form>
         </div>
     </section>
     <!-- <aside class="call-to-action background"> -->

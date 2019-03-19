@@ -33,6 +33,11 @@
 
 <body>
 
+    <script>
+        const toggleMenu = () => {
+            $("#menu-close").click();
+        }
+    </script>
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
         <i class="fa fa-bars"></i>
@@ -43,24 +48,24 @@
                 <i class="fa fa-times"></i>
             </a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$( "#menu-close" ).click();>Edward Rees</a>
+                <a href="#top" onclick=toggleMenu()>Edward Rees</a>
             </li>
             <li>
-                <a href="#top" onclick=$( "#menu-close" ).click();>Home</a>
+                <a href="#top" onclick=toggleMenu()>Home</a>
             </li>
             <li>
-                <a href="#about" onclick=$( "#menu-close" ).click();>About</a>
+                <a href="#about" onclick=toggleMenu()>About</a>
             </li>
             <li>
-                <a href="#services" onclick=$( "#menu-close" ).click();>Services</a>
+                <a href="#services" onclick=toggleMenu()>Services</a>
             </li>
-            <li><a href="#educationExperience" onclick=$( "#menu-close" ).click();>Education &amp; Experience</a></li>
-            <li><a href="#skills" onclick=$( "#menu-close" ).click();>Skills</a></li>
+            <li><a href="#educationExperience" onclick=toggleMenu()>Education &amp; Experience</a></li>
+            <li><a href="#skills" onclick=toggleMenu()>Skills</a></li>
             <li>
-                <a href="#projects" onclick=$( "#menu-close" ).click();>Projects</a>
+                <a href="#projects" onclick=toggleMenu()>Projects</a>
             </li>
             <li>
-                <a href="#contact" onclick=$( "menu-close" ).click();>Contact Me!</a>
+                <a href="#contact" onclick=toggleMenu()>Contact</a>
             </li>
         </ul>
     </nav>
@@ -298,6 +303,16 @@
                                 <p>Learning</p>
                             </div>
                         </div>
+
+                        <div class="col-lg-2 col-sm-4 hovereffect">
+                            <img src="./img/languages/typescript.png" height="100" alt="">
+                            <div class="overlay">
+                                <h2>
+                                    TypeScript
+                                </h2>
+                                <p>Learning</p>
+                            </div>
+                        </div>
                         <div class="col-lg-2 col-sm-4 hovereffect">
                             <img src="./img/languages/kotlin.png" height="100" alt="">
                             <div class="overlay">
@@ -335,13 +350,8 @@
                                 <p>Learning</p>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-4 hovereffect">
-                            <img src="./img/languages/nodejs.png" alt="" height="100">
-                            <div class="overlay">
-                                <h2>Node JS</h2>
-                                <p>Learning</p>
-                            </div>
-                        </div>
+
+
                         <div class="col-lg-4">
                             <div class="row"></div>
                         </div>
@@ -379,15 +389,6 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-sm-4 hovereffect">
-                            <img src="./img/languages/typescript.png" height="100" alt="">
-                            <div class="overlay">
-                                <h2>
-                                    TypeScript
-                                </h2>
-                                <p>Learning</p>
-                            </div>
-                        </div>
 
                         <div class="col-lg-2 col-sm-4 hovereffect">
                             <img src="./img/languages/vue.png" alt="" height="100">
@@ -400,13 +401,19 @@
                         </div>
 
 
-
                         <div class="col-lg-2 hovereffect">
                             <img src="./img/languages/android.png" height="100" alt="">
                             <div class="overlay">
                                 <h2>
                                     Android
                                 </h2>
+                                <p>Learning</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-4 hovereffect">
+                            <img src="./img/languages/nodejs.png" alt="" height="100">
+                            <div class="overlay">
+                                <h2>Node JS</h2>
                                 <p>Learning</p>
                             </div>
                         </div>

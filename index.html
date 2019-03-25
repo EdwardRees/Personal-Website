@@ -10,6 +10,7 @@
     <meta name="author" content="Edward Rees">
 
     <title>Edward Rees</title>
+    <script src="js/toggle.js"></script>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +22,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
         rel="stylesheet" type="text/css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -74,7 +76,7 @@
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1>Edward Rees</h1>
-            <h3>Front End Web Designer, App Developer, Programming Tutor, Drummer, Sailor</h3>
+            <h3>Front-end Web Designer, App Developer, Programming Tutor, Drummer, Sailor</h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
         </div>
@@ -84,8 +86,22 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>My name is Edward Rees</h2>
+                <div class="col-md-12 text-center">
+                    <h2>About Me</h2>
+                    <hr class="small">
+                </div>
+                <div class="col-md-5 text-left">
+                    <h2 class="text-center">Who am I?</h2>
+                    <p class="lead">
+                        My name is Edward Rees. I am currently a student at the University of San Francisco studying
+                        Computer Science and Psychology. I grew up in Hong Kong and lived there for most of my life up
+                        until I moved in 2018. When I'm not programming or working, I'm usually drumming or, when I'm in
+                        Hong Kong, sailing. In my free time, I serve as a mentor and tutor people programming.
+                    </p>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-5 text-right">
+                    <h2 class="text-center">My Story</h2>
                     <p class="lead">
                         I began programming in 2014. I started with the simple HTML and CSS-web design. Shortly after,
                         in early 2015, I began playing around with Swift, Python, and Java. Throughout 2015-2016, I
@@ -101,13 +117,10 @@
                     </p>
                 </div>
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
 
-    <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+
     <section id="services" class="services background">
         <div class="container">
             <div class="row text-center">
@@ -121,14 +134,12 @@
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-list-alt fa-stack-1x text-primary blue"></i>
                                 </span>
-                                <!-- Logo should be an outline of a website -->
                                 <h4>
-                                    <strong>Front End Web Development</strong>
+                                    <strong>Front-end Web Development</strong>
                                 </h4>
                                 <p>With the help of Bootstrap, I can help you create a website with HTML, CSS, and
                                     JavaScript's JQuery. Additionally, I can use Vue.js and React.js as libraries to
                                     help develop websites.</p>
-                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -137,14 +148,12 @@
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-mobile fa-stack-1x text-primary blue"></i>
                                 </span>
-                                <!-- Logo should be a outline of an iphone -->
                                 <h4>
                                     <strong>Application Development</strong>
                                 </h4>
                                 <p>Having learned Java, basic Swift, and React Native, I can help you develop an idea
                                     into an
                                     actual mobile app.</p>
-                                <!--<a href="#" class="btn btn-light">Learn More</a>-->
                             </div>
                         </div>
 
@@ -178,23 +187,31 @@
                     </h2>
                     <hr>
                     <div class="institute text-left">
-                        <span class="name">University Of San Francisco</span>
-                        <br>
-                        <span class="location">San Francisco, CA</span>
-                        <br>
-                        <span class="degree">BS, Computer Science</span>
-                        <br>
-                        <span class="date">2018-2022</span>
+                        <div class="col-md-6">
+                            <span>2018-2022</span>
+                            <br>
+                            <span class="name">University of San Francisco</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="degree">BS, Computer Science</span>
+                            <br>
+                            <span class="description">Major in Computer Science<br />Minor in Psychology</span>
+                        </div>
                     </div>
                     <br>
+                    <br>
                     <div class="institute text-left">
-                        <span class="name">Hong Kong International School</span>
-                        <br>
-                        <span class="location">Hong Kong, Hong Kong SAR</span>
-                        <br>
-                        <span class="degree">High School Diploma</span>
-                        <br>
-                        <span class="date">2014-2018</span>
+                        <div class="col-md-6">
+                            <span>2014-2018</span>
+                            <br>
+                            <span class="name">Hong Kong International School</span>
+                            <br>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="degree">High School Diploma</span>
+                            <br>
+                            <span class="description">High School in Hong Kong</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
@@ -202,51 +219,95 @@
                         Experience
                     </h2>
                     <hr>
-                    <div class="job text-right">
-                        <span class="title">Front End Web Developer</span>
-                        <br>
-                        <span class="company">ChainDimenxxion</span>
-                        <br>
-                        <span class="date">
-                            Jan 2019-Present
-                        </span>
-                        <br>
-                        <span class="location">Remote</span>
+                    <div class="job text-left">
+                        <div class="col-md-6 text-left">
+                            <span class="date">Jan 2019-Present</span>
+                            <br>
+                            <span class="company">ChainDimenxxion</span>
+                            <br>
+                            <span class="location">Remote</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="title">Front-end Web Developer</span>
+                            <br>
+                            <span class="description">
+                                - Provide design and functioning advice
+                                <br />
+                                - Using HTML5, CSS3, Bootstrap, and jQuery, created the front-end website for their
+                                platform
+                            </span>
+                        </div>
                     </div>
+                    <hr>
                     <br>
-                    <div class="job text-right">
-                        <span class="title">[Part Time] Front End Developer</span>
-                        <br>
-                        <span class="company">Share My Hub</span>
-                        <br>
-                        <span class="date">Apr 2018-Present</span>
-                        <br>
-                        <span class="location">Remote</span>
+                    <br>
+                    <br>
+                    <div class="job text-left">
+                        <div class="col-md-6 text-left">
+                            <span class="date">Apr 2018-Present</span>
+                            <br>
+                            <span class="company">SHare My Hub</span>
+                            <br>
+                            <span class="location">Remote</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="title">[Part Time] Front-end Developer</span>
+                            <br>
+                            <span class="description">- Provide design and functioning advice <br />
+                                - Using Vue.js, created the front-end website for their platform </span>
+                        </div>
+
                     </div>
+                    <hr>
                     <br>
-                    <div class="job text-right">
-                        <span class="title">[Part-time] Chief Technology Officer</span>
-                        <br>
-                        <span class="company">S Plus Group Limited</span>
-                        <br>
-                        <span class="date">Oct 2015-Present</span>
-                        <br>
-                        <span class="location">Hong Kong</span>
-                    </div>
                     <br>
-                    <div class="job text-right">
-                        <span class="title">[Part Time] Event Staff</span>
-                        <br>
-                        <span class="company">Foodie Magazine</span>
-                        <br>
-                        <span class="date">Sep 2015-Aug 2018</span>
-                        <br>
-                        <span class="location">Hong Kong</span>
-                        <br>
+                    <div class="job text-left">
+                        <div class="col-md-6 text-left">
+                            <span class="date">Oct 2015-Present</span>
+                            <br>
+                            <span class="company">S Plus Group Limited</span>
+                            <br>
+                            <span class="location">Hong Kong</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="title">[Part-time] Chief Technology Officer</span>
+                            <br>
+                            <span class="description">
+                                - Designed, developed, and published main website using HTML5, CSS3, Bootstrap, and
+                                JavaScript, utilising GitHub Pages to host.
+                                <br />
+                                - Advised and managed technology throughout the office.
+                            </span>
+                            <br>
+                            <br>
+                        </div>
+
                     </div>
                     <br>
 
+                    <br>
+                    <br>
+                    <div class="job text-left">
+                        <div class="col-md-6 text-left">
+                            <span class="date">Sep 2015-Aug 2018</span>
+                            <br>
+                            <span class="company">Foodie Magazine</span>
+                            <br>
+                            <span class="location">Hong Kong</span>
+                        </div>
+                        <div class="col-md-6">
+                            <span class="title">[Part Time] Event Staff</span>
+                            <br>
+                            <span class="description">- Worked events including setting up and customer service.</span>
+                            <br>
+                            <br>
+                        </div>
+                        <hr>
+                    </div>
+
+
                 </div>
+                <br>
             </div>
         </div>
     </section>
@@ -255,46 +316,46 @@
     <section id="skills" class="skills background">
         <div class="container">
             <div class="row text-center">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <h1>Programming Languages</h1>
                     <h3>Languages</h3>
                     <div class="row text-center languages">
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/html5.png" alt="" height="100">
                             <div class="overlay">
                                 <h2>HTML5</h2>
                                 <p>Proficient</p>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/css.png" alt="" height="100">
                             <div class="overlay">
                                 <h2>CSS</h2>
                                 <p>Proficient</p>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/javascript.png" alt="" height="100">
                             <div class="overlay">
                                 <h2>JavaScript</h2>
                                 <p>Fairly Proficient</p>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/java.png" alt="" height="100">
                             <div class="overlay">
                                 <h2>Java</h2>
                                 <p>Fairly Proficient</p>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/python.png" alt="" height="100">
                             <div class="overlay">
                                 <h2>Python</h2>
                                 <p>Fairly Proficient</p>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/swift.png" height="100" alt="">
                             <div class="overlay">
                                 <h2>
@@ -304,7 +365,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/typescript.png" height="100" alt="">
                             <div class="overlay">
                                 <h2>
@@ -313,7 +374,7 @@
                                 <p>Learning</p>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/kotlin.png" height="100" alt="">
                             <div class="overlay">
                                 <h2>
@@ -322,28 +383,28 @@
                                 <p>Learning</p>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/go.png" height="100" style="align-self: center" alt="">
                             <div class="overlay">
                                 <h2>Go</h2>
                                 <p>Learning</p>
                             </div>
                         </div>
-                        <div class="col-lg-2  col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2  col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/C_sharp_2.png" alt="" height="100">
                             <div class="overlay">
                                 <h2>C#</h2>
                                 <p>Learning</p>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/C++.png" alt="" height="100">
                             <div class="overlay">
                                 <h2>C++</h2>
                                 <p>Learning</p>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/dart.png" alt="" height="100">
                             <div class="overlay">
                                 <h2>Dart</h2>
@@ -361,7 +422,7 @@
                     </div>
                     <div class="row text-center languages">
                         <h3>Frameworks</h3>
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/Boostrap_logo.png" alt="" height="100">
                             <div class="overlay">
                                 <h2>Bootstrap</h2>
@@ -369,7 +430,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/react.png" alt="" height="100">
                             <div class="overlay">
                                 <h2>
@@ -379,7 +440,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/jquery.png" height="100" alt="">
                             <div class="overlay">
                                 <h2>
@@ -390,7 +451,7 @@
                         </div>
 
 
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/vue.png" alt="" height="100">
                             <div class="overlay">
                                 <h2>
@@ -401,7 +462,7 @@
                         </div>
 
 
-                        <div class="col-lg-2 col-sm-4 col-xs-6 hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                             <img src="./img/languages/android.png" height="100" alt="">
                             <div class="overlay">
                                 <h2>
@@ -410,7 +471,7 @@
                                 <p>Learning</p>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-sm-4 col-xs-6  hovereffect">
+                        <div class="col-md-2 col-sm-4 col-xs-6  hovereffect">
                             <img src="./img/languages/nodejs.png" alt="" height="100">
                             <div class="overlay">
                                 <h2>Node JS</h2>
@@ -429,27 +490,32 @@
     <section id="projects" class="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
+                <div class="col-md-12 text-center">
                     <h2>My Projects</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-4 col-sm-4 col-xs-4">
                             <div class="portfolio-item">
                                 <a href="http://www.splusgroup.net">
-                                    <img class="img-portfolio img-responsive" src="img/S+GroupLimitedLogo.png">
+                                    <img class="img-portfolio img-responsive" src="img/S+GroupLimitedLogo.png"
+                                        alt="S Plus Group Limited">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-4">
                             <div class="portfolio-item">
-                                <a href="http://programming-tutorials.splusgroup.net"></a>
+                                <a href="http://programming-tutorials.splusgroup.net">
+                                    <img src="img/ProgrammingTutorialsLogo.png" alt="Programming Tutorials"
+                                        class="img-portfolio img-responsive">
+                                </a>
                             </div>
                             <!-- Placeholder -->
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-4">
                             <div class="portfolio-item">
                                 <a href="https://www.collegeselector.app">
-                                    <img class="img-portfolio img-responsive" src="img/CollegeSelectorIcon.png">
+                                    <img class="img-portfolio img-responsive" alt="College Selector"
+                                        src="img/CollegeSelectorIcon.png">
                                 </a>
                             </div>
                         </div>
@@ -458,11 +524,11 @@
             </div>
         </div>
     </section>
-    <section id="contact" class="skills background">
+    <section id="contact" class=" background">
         <div class="container">
             <h1 class="text-center">Contact Me!</h1>
             <form action="https://api-splusgroup.herokuapp.com/send-email-work" method="POST">
-                <div class="row col-lg-12 ">
+                <div class="row col-md-12 ">
                     <div class="form-group">
                         <label for="name" class="col">Name: </label>
                         <input type="text" name="name" class="form-control col" id="name" required>
@@ -475,7 +541,7 @@
                         <label for="message" class="col">Message: </label>
                         <textarea name="message" class="form-control" id="message" cols="30" rows="10"></textarea>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center form-group">
                         <input type="submit" value="Submit" class="btn btn-lg btn-success">
                     </div>
                 </div>
@@ -489,8 +555,8 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4>
+                <div class="col-md-12 text-center">
+                    <h4 class="text-center">
                         <strong>Edward Rees</strong>
                     </h4>
                     <p>Unit 1507, 15th Floor

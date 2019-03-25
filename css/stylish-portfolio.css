@@ -166,13 +166,13 @@ hr.small {
 /* About */
 
 .about {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 /* Services */
 
 .services {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .service-item {
@@ -181,37 +181,56 @@ hr.small {
 
 .background {
     /* background-color: #4682B4; */
-    background-color: #165c7d;;
+    background-color: #165c7d;
+    ;
     color: white;
 }
 
 .institute {
     text-align: left;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .institute .name {
-    font-weight: 600;
+    font-weight: bold;
 }
 
 
+
 .institute .degree {
+    font-weight: bold;
     font-style: italic;
+    font-size: 18px
+}
+
+.institute .description {
+    font-size: 14px;
 }
 
 .left-border {
     border-left: 5px solid #fff;
 }
+
 .job {
- font-size: 20px;
- line-height: 1.1;
+    font-size: 16px;
+    /* line-height: 1.1; */
+}
+
+.job .description {
+    font-size: 14px;
+}
+.job ul.description {
+    list-style-type: '-';
 }
 
 .job .company {
-    
+    font-weight: bold;
 }
+
 .job .title {
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
 }
 
 .job .date {
@@ -223,9 +242,11 @@ hr.small {
     color: #606060;
     font-size: 15px;
 }
+
 .job .desc {
     color: #555;
 }
+
 /* Callout */
 
 .callout {
@@ -243,15 +264,21 @@ hr.small {
 /* Portfolio */
 
 .portfolio {
-    padding: 50px 0;
+    padding: 20px 0;
 }
+
+.educationExperience {
+    padding: 20px 0;
+}
+
 .projects {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .portfolio-item {
     margin-bottom: 30px;
 }
+
 .projects-item {
     margin-bottom: 30px;
 }
@@ -272,16 +299,17 @@ hr.small {
 /* Call to Action */
 
 .call-to-action {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .call-to-action .btn {
     margin: 10px;
 }
 
-.skills { 
-    padding: 50px 0;
+.skills {
+    padding: 20px 0;
 }
+
 .skills .btn {
     margin: 10px;
 }
@@ -305,7 +333,7 @@ hr.small {
 /* Footer */
 
 footer {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 #to-top {
@@ -321,14 +349,14 @@ footer {
 }
 
 .blue {
-color: #165c7d;
+    color: #165c7d;
 }
 
 /* Hover */
 
 .hovereffect {
     height: 100;
-    float:center;
+    float: center;
     overflow: hidden;
     position: relative;
     text-align: center;

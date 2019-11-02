@@ -4,7 +4,7 @@
   "private": true,
   "homepage":"https://edwardrees.github.io/programming-tutorials",
   "dependencies": {
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
     "react": "^16.7.0",
     "react-bootstrap": "^0.32.4",

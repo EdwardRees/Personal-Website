@@ -1,0 +1,235 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="bootstrap_files/js/bootstrap.min.js"></script>
+    <script src="bootstrap_files/js/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link href="bootstrap_files/css/bootstrap.min.css" rel="stylesheet" />
+    <script>
+      $("document").ready(() => {
+        $("#frontendQuestions").hide();
+        $("#backendQuestions").hide();
+        $("#otherFrontend").hide();
+        $("#otherBackend").hide();
+      });
+      const showOther = () => {
+        var val = $("#FrontEndTool").val();
+        if (val == "Other") {
+          $("#otherFrontend").show();
+        }
+        if (val != "Other") {
+          $("#otherFrontend").hide();
+        }
+        //   if($("#FrontEndTool").value())
+      };
+    //   const readFrontCheck = () => {
+    //     console.log($('input[name="frontendCheck"]').val());
+    //   }
+    //   const readBackCheck = () => {
+    //     console.log($('input[name="backendCheck"]').val());
+    //   }
+    </script>
+    <title>Inquiry for Freelancers</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Inquiry About Freelancing</h1>
+      <p>
+        Please fill out the form below to provide me with some basic information
+        and some technical requirements for your project. I will get back to you
+        shortly whether I can do it or not.
+      </p>
+      <form
+      action="https://us-central1-api-splusgroup.cloudfunctions.net/sendFreelanceInquiry"
+        method="POST"
+      >
+        <h2>Basic Contact Information</h2>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            name="name"
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="John Doe"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            name="email"
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="name@email.com"
+          />
+        </div>
+        <h2>General Information</h2>
+        <div class="form-group">
+          <label for="description"
+            >General Purpose: What is the purpose of the website?</label
+          >
+          <textarea id="description" class="form-control" name="description">
+          </textarea>
+        </div>
+        <h2>Technical Requirements</h2>
+        <p>
+          Please select options below. If your website only requires a visual
+          website that doesn't require heavy or barely any processing, please
+          select "Front End", however, if there is some information processing
+          that may occur, please select "Back End" too.
+        </p>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="frontend"
+            name="frontendCheck"
+            onchange="$('#frontendQuestions').toggle();"
+          />
+          <label class="form-check-label" for="frontend">Front end</label>
+        </div>
+        <div class="form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="backendCheck"
+            id="backend"
+            onchange="$('#backendQuestions').toggle();"
+          />
+          <label class="form-check-label" for="backend">Back end</label>
+        </div>
+        <br />
+        <div class="form-group" id="frontendQuestions">
+          <h4>Front End</h4>
+          <p>
+            Please select the applicable front end tools. If there is no
+            preference, please select "No Preference".
+          </p>
+          <div class="form-group">
+            <label for="FrontEndTool">Front End Framework</label>
+            <select
+              class="form-control"
+              id="FrontEndTool"
+              name="FrontEndTool"
+              onchange="showOther();"
+            >
+              <option value="No Preference">No Preference</option>
+              <option value="HTML, CSS, JS">Plain HTML, CSS, JS</option>
+              <option value="ReactJS">React JS</option>
+              <option value="VueJS">Vue JS</option>
+              <option value="Other">Other</option>
+            </select>
+            <div class="form-group" id="otherFrontend">
+              <label for="other">Other</label>
+              <textarea
+                class="form-control"
+                id="other"
+                name="frontEndOther"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="form-group" id="backendQuestions">
+          <h4>Back End</h4>
+          <p>
+            Please select all the applicable aspects to the website. This part
+            covers the processing aspect of the website and less of what the
+            user will see.
+          </p>
+          <div class="form-group">
+            <label for="backendInfo">Back End Requirements</label>
+            <div class="form-check">
+              <input
+                name="BackendAuth"
+                type="checkbox"
+                class="form-check-input"
+                id="BackendAuth"
+              />
+              <label for="BackendAuth" class="form-check-label"
+                >Authentication (Log In System)</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                name="BackendNav"
+                type="checkbox"
+                class="form-check-input"
+                id="BackendNav"
+              />
+              <label for="BackendNav" class="form-check-label"
+                >Navigation (Multiple Pages)</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                name="BackendProfile"
+                type="checkbox"
+                class="form-check-input"
+                id="BackendProfile"
+              />
+              <label for="BackendProfile" class="form-check-label"
+                >User Profile</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                name="BackendTransaction"
+                type="checkbox"
+                class="form-check-input"
+                id="BackendTransaction"
+              />
+              <label for="BackendTransaction" class="form-check-label"
+                >Shop based Transactions</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                name="BackendHosting"
+                type="checkbox"
+                class="form-check-input"
+                id="BackendHosting"
+              />
+              <label for="BackendHosting" class="form-check-label"
+                >Web Hosting</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                name="BackendContact"
+                type="checkbox"
+                class="form-check-input"
+                id="BackendContact"
+              />
+              <label for="BackendContact" class="form-check-label"
+                >Contact Us Form</label
+              >
+            </div>
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="BackendOther"
+                onchange="$('#otherBackend').toggle()"
+              />
+              <label for="BackendOther" class="form-check-label">Other</label>
+            </div>
+            <div id="otherBackend">
+              <label for="backendOther">Other Back End Requirements</label>
+              <textarea
+                name="backendOther"
+                type="text"
+                class="form-control"
+                id="backendOther"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-block btn-success" onsubmit="alert('Thank you for submitting!');">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

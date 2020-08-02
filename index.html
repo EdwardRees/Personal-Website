@@ -130,11 +130,13 @@
             <h2 class="text-center">Who am I?</h2>
             <p class="lead">
               My name is Edward Rees. I am currently a student at the University
-              of San Francisco studying Computer Science and Psychology. I grew
-              up in Hong Kong and lived there for most of my life up until I
-              moved in 2018. When I'm not programming or working, I'm usually
-              drumming or, when I'm in Hong Kong, sailing. In my free time, I
-              serve as a mentor and tutor people programming.
+              of San Francisco majoring in Computer Science, minoring in
+              Psychology, and concurrently pursuing my Masters of Arts in
+              Education. I grew up in Hong Kong and lived there for most of my
+              life up until I moved to San Francisco in 2018. When I'm not
+              programming or working, I'm usually drumming or, when I'm in Hong
+              Kong, sailing. In my free time, I serve as a mentor and tutor
+              people programming.
             </p>
           </div>
           <div class="col-md-2"></div>
@@ -150,12 +152,20 @@
               Java throughout the winter of 2016 to the summer of 2017. During
               the summer of 2017, I learned the JavaScript framework of React
               and it's application of React Native to help build the
-              <a href="https://www.collegeselector.app" style="color: black"
+              <a href="https://www.collegeselector.app" style="color: black;"
                 >College Selector</a
               >. In the summer of 2018, I've learned basic TypeScript, the
               JavaScript framework named Vue.js, played around with PHP and
               Kotlin. In the mean time, I've been teaching Web Design, Python,
-              and basic Java. I'm currently learning Dart, C#, C++, and Node.js.
+              and basic Java. I'm currently learning Dart, C, C#, C++, and
+              Node.js. I've been asked why I'm pursuing education and to become
+              a teacher. When I was in my first year of University, I realized
+              how much I enjoyed explaining various concepts to my peers and
+              teaching others programming concepts. I discovered my personal
+              passion for education and helping others find their interest in
+              Computer Science and programming, or on the flip side, helping
+              others understand why programming may not be for them or why they
+              don't enjoy it so much.
             </p>
           </div>
         </div>
@@ -295,14 +305,12 @@
                 <span class="title">Coding Coach</span>
                 <br />
                 <span class="description">
-                  - Teaching students from 8-18 programming in Scratch, Python,
+                  - Teaching students from 8-17 programming in Scratch, Python,
                   and JavaScript
                 </span>
                 <br /><br />
               </div>
             </div>
-            
-
 
             <div class="job text-left">
               <div class="col-md-6 text-left">
@@ -361,10 +369,34 @@
 
             <div class="job text-left">
               <div class="col-md-6 text-left">
+                <span class="date">Jun 2020-Jun 2020</span>
+                <br />
+                <span class="company"
+                  ><a href="http://www.kactus.com.hk" target="_blank"
+                    >Kactus</a
+                  ></span
+                >
+                <br />
+                <span class="location">Hong Kong</span>
+              </div>
+              <div class="col-md-6">
+                <span class="title">Summer Intern</span>
+                <br />
+                <span class="description"
+                  >- Assisted at creating a WordPress theme for a client <br />
+                  - Used PHP, CSS, and JavaScript to create a WordPress theme
+                  and plugin to cater to the needs of the client
+                </span>
+                <br /><br />
+              </div>
+            </div>
+
+            <div class="job text-left">
+              <div class="col-md-6 text-left">
                 <span class="date">Apr 2018-Sep 2019</span>
                 <br />
                 <span class="company"
-                  ><a href="http://dev.sharemyhub.com" target="_blank"
+                  ><a href="http://sharemyhub.com" target="_blank"
                     >Share My Hub</a
                   ></span
                 >
@@ -519,7 +551,7 @@
                 <img
                   src="./img/languages/go.png"
                   height="100"
-                  style="align-self: center"
+                  style="align-self: center;"
                   alt=""
                 />
                 <div class="overlay">
@@ -527,7 +559,7 @@
                   <p>Learning</p>
                 </div>
               </div>
-              <div class="col-md-2  col-sm-4 col-xs-6 hovereffect">
+              <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                 <img src="./img/languages/C_sharp_2.png" alt="" height="100" />
                 <div class="overlay">
                   <h2>C#</h2>
@@ -592,7 +624,7 @@
                 </div>
               </div>
 
-              <div class="col-md-2 col-sm-4 col-xs-6  hovereffect">
+              <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
                 <img src="./img/languages/nodejs.png" alt="" height="100" />
                 <div class="overlay">
                   <h2>Node JS</h2>
@@ -809,20 +841,20 @@
     <!-- Custom Theme JavaScript -->
     <script>
       // Closes the sidebar menu
-      $("#menu-close").click(function(e) {
+      $("#menu-close").click(function (e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
       });
       // Opens the sidebar menu
-      $("#menu-toggle").click(function(e) {
+      $("#menu-toggle").click(function (e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
       });
       // Scrolls to the selected menu item on the page
-      $(function() {
+      $(function () {
         $(
           "a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])"
-        ).click(function() {
+        ).click(function () {
           if (
             location.pathname.replace(/^\//, "") ==
               this.pathname.replace(/^\//, "") ||
@@ -835,7 +867,7 @@
             if (target.length) {
               $("html,body").animate(
                 {
-                  scrollTop: target.offset().top
+                  scrollTop: target.offset().top,
                 },
                 1000
               );
@@ -846,24 +878,24 @@
       });
       //#to-top button appears after scrolling
       var fixed = false;
-      $(document).scroll(function() {
+      $(document).scroll(function () {
         if ($(this).scrollTop() > 250) {
           if (!fixed) {
             fixed = true;
             // $('#to-top').css({position:'fixed', display:'block'});
-            $("#to-top").show("slow", function() {
+            $("#to-top").show("slow", function () {
               $("#to-top").css({
                 position: "fixed",
-                display: "block"
+                display: "block",
               });
             });
           }
         } else {
           if (fixed) {
             fixed = false;
-            $("#to-top").hide("slow", function() {
+            $("#to-top").hide("slow", function () {
               $("#to-top").css({
-                display: "none"
+                display: "none",
               });
             });
           }
@@ -872,13 +904,13 @@
       // Disable Google Maps scrolling
       // See http://stackoverflow.com/a/25904582/1607849
       // Disable scroll zooming and bind back the click event
-      var onMapMouseleaveHandler = function(event) {
+      var onMapMouseleaveHandler = function (event) {
         var that = $(this);
         that.on("click", onMapClickHandler);
         that.off("mouseleave", onMapMouseleaveHandler);
         that.find("iframe").css("pointer-events", "none");
       };
-      var onMapClickHandler = function(event) {
+      var onMapClickHandler = function (event) {
         var that = $(this);
         // Disable the click handler until the user leaves the map area
         that.off("click", onMapClickHandler);

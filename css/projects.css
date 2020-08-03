@@ -2,25 +2,41 @@ body {
   background: linear-gradient(#056c7c, #00a3bd);
   color: #f8f8f8;
 }
-
+.category {
+  padding: 20;
+}
 .project {
   width: 100%;
-  height: 25%;
-  background-color: #000;
+  background-color: #397c90;
   color: #f8f8f8;
-  padding: 20;
+  padding: 40 10 10;
+}
+
+.splus:hover {
+  background-color: #F76946;
+}
+
+.programming-tutorials:hover {
+  background-color: #3E6DA9;
+}
+
+.college-selector:hover {
+  background-color: #4E81BD;
+}
+
+.gratitude-journal:hover {
+  background-color: #3C6074;
 }
 
 .project-row {
-  height: 100%;
   display: flex;
-  flex: 1;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+  padding-bottom: 20;
 }
 
-.project a {
+.project-row a {
   color: #f8f8f8;
   font-size: 3rem;
 }
@@ -28,4 +44,29 @@ body {
 .project-heading {
   width: 100%;
   text-align: center;
+  padding: 20 0;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.links a {
+  color: #f8f8f8;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #00b675
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.icon > i {
+  font-size: 1.5rem;
 }

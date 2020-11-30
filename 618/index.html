@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Critical Annotated Bibliography</title>
+    <style src="./style.css"></style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        background-color: #3c6074;
+        min-height: 100%;
+        color: white;
+        padding-top: 1%;
+      }
+
+      a {
+        color: white;
+      }
+
+      a:active {
+        color: white;
+      }
+
+      a:visited {
+        color: white;
+      }
+
+      a:hover {
+        color: white;
+      }
+
+      .references {
+        font-size: 10pt;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center">
+        Critical Annotated Bibliography: <br />Distanced Learning; The New Norm
+      </h1>
+      <p class="text-center">
+        The Novel Coronavirus of 2019, or Covid for short, caused the entire
+        world to reevaluate our system of Education. Despite the idea of a
+        vaccine going around, there is a possibility that distanced learning may
+        become a norm, or at least a part of a new post-covid world. With that
+        in mind, we may have to be mindful and consider the possibility that,
+        once Covid is done, we may still have to continue with the option of
+        distanced learning. Therefore, it's important that we analyze and
+        recognize some of the problems related to distanced learning. However,
+        at the same time, we can propose some solutions to help make distanced
+        learning more equitable for all.
+      </p>
+      <div class="resources">
+        <div class="row">
+          <div
+            class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center"
+          >
+            <img
+              src="img/kumashiro.png"
+              alt="Kumashiro"
+              class="img-thumbnail rounded"
+              id="Kumashiro"
+            />
+            <br />
+            <br />
+            <div>
+              <button class="btn btn-success" id="Kumashiro_toggle_overview">
+                Overview
+              </button>
+              <button class="btn btn-warning" id="Kumashiro_toggle_evaluation">
+                Evaluation
+              </button>
+              <button class="btn btn-info" id="Kumashiro_toggle_usage">
+                Usage
+              </button>
+              <button id="Kumashiro_citation_toggle" class="btn btn-secondary">
+                Show Citations
+              </button>
+            </div>
+            <br />
+            <div id="Kumashiro_text">
+              <p class="desc" id="Kumashiro_overview">
+                Overview:<br />
+                In Kumashiro's piece, he looks at how different schools around
+                the US have been affected by the Novel Coronavirus of 2019, or
+                Covid for short. At one point, Kumashiro discusses how
+                "technology can enhance education, but the misuse of or
+                over-reliance on technology can exacerbate existing resource
+                inequalities between schools and even between homes,
+                particularly for students in poverty, homeless students, and
+                students with disabilities" (pg. 2). Kumashiro looks at the
+                various problems that have arisen due to distanced learning and
+                the challenges that come with it. Kumashiro also analyzes the
+                negative effects of distanced learning on students across the
+                United States.
+              </p>
+              <p class="evaluation" id="Kumashiro_evaluation">
+                Evaluation:<br />
+                Because of how inequitable education already is, distanced
+                learning can exacerbate that inequity. Students aren't able to
+                fully collaborate with one another, as students would be
+                communicating via a screen the entire time. This shift can cause
+                more harm as students would be required to do more work outside
+                of class, rather than within the classroom and collaborating
+                over a project together.
+              </p>
+              <p class="usage" id="Kumashiro_usage">
+                Usage:<br />
+                In a Computer Science curriculum, I may have a single lesson
+                regarding the ethics of Computer Science. This would touch base
+                on the pros and cons of the over-usage of technology. In the
+                lesson, I would use this article to serve as an example of the
+                various disadvantages that come with distanced learning.
+              </p>
+            </div>
+            <p class="citation" id="Kumashiro_citation">
+              <strong>Resource:</strong> Kumashiro, K (2020). Corona-capitalism
+              and the racialized looting of public schools, Teachers College
+              Press, May 29, 2020. Retrieved July 24, 2020 from:
+              <a
+                href="https://www.tcpress.com/blog/corona-capitalism-racialized-looting-public-schools/"
+                >https://www.tcpress.com/blog/corona-capitalism-racialized-looting-public-schools/</a
+              >
+            </p>
+            <p class="citation" id="Kumashiro_image_citation">
+              <strong>Image:</strong> Kumashiro, K. (2020). Corona-capitalism
+              and the racialized looting of public schools [Image, screen
+              capture]. Retrieved Nov 30 2020 from
+              <a
+                href="https://www.tcpress.com/blog/corona-capitalism-racialized-looting-public-schools/"
+                >https://www.tcpress.com/blog/corona-capitalism-racialized-looting-public-schools/</a
+              >
+            </p>
+          </div>
+          <div
+            class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center"
+            id="Love"
+          >
+            <img src="img/love.png" alt="Love" class="img-thumbnail rounded" />
+            <br />
+            <br />
+            <div>
+              <button class="btn btn-success" id="Love_toggle_overview">
+                Overview
+              </button>
+              <button class="btn btn-warning" id="Love_toggle_evaluation">
+                Evaluation
+              </button>
+              <button class="btn btn-info" id="Love_toggle_usage">Usage</button>
+              <button class="btn btn-secondary" id="Love_citation_toggle">
+                Show Citations
+              </button>
+            </div>
+            <br />
+            <div id="Love_text">
+              <p class="desc" id="Love_overview">
+                Overview:<br />
+                In Love's piece, Love analyzes how the Novel Coronavirus of
+                2019, or Covid for short, changed the way of education within
+                the United States. Various educational institutions moved away
+                from an emphasis on standardized testing, instead focusing on
+                the wellbeing of students. Love explains that at the beginning
+                of the Pandemic, in the "state of Georgia, the state's school
+                superintendent issued a letter to teachers and parents calling
+                for "compassion over compliance" as we all try to reach students
+                during a pandemic. In mid-April, Atlanta's superintendent moved
+                the district to a four-day teaching schedule. Teachers are to
+                use Fridays for professional development and to be available to
+                students who are behind. We need that same energy,
+                understanding, and creativity from our school leaders when
+                schools reopen" (pg 1). All of this to show how schools
+                positively adapted to the change caused by Covid. At the same
+                time, this positive change does have its negative aspects too.
+                Love states, "I see the possibilities for an education system
+                now forced to trust teachers, give students autonomy, and rely
+                on the ingenuity of parents. I also see the loss of schools as
+                places of refuge, safety, family services, and invaluable social
+                interactions" (pg. 2). With the loss of physical school and a
+                shift towards virtual school, the needs have changed. Love
+                reminds the reader that even after the pandemic, we cannot go
+                back to the pre-Covid system, and we must continue to prioritize
+                the health and wellbeing of our students.
+              </p>
+              <p class="evaluation" id="Love_evaluation">
+                Evaluation:<br />
+                Once schools reopen and life goes back to some normality within
+                a post-covid world, we, as educators, must remember the benefits
+                that came with the Covid period of Education. Some of the
+                downsides are prevalent and important to recognize. However, as
+                we eventually move into a Post-covid world, we have to try to
+                merge the benefits of both pre-Covid and intra-Covid periods for
+                Education. This merge would look like continuing to pay
+                attention towards the wellbeing of our students, not
+                prioritizing standardized testing, however, keeping the
+                resources of our schools open to supply that refuge that Love
+                talks about.
+              </p>
+              <p class="usage" id="Love_usage">
+                Usage:<br />
+                In a Computer Science curriculum, I may have a single lesson
+                regarding the Computer Science in Education, and how it can have
+                heavy effects on the various ways we learn. This resource would
+                go hand-in-hand with the Kumashiro piece. The Kumashiro piece
+                discusses the positive and negative effects of technology, while
+                this one discusses how technology like social media can be used
+                to help share stories for good. In a sense, this article would
+                showcase how the world works beyond just technology, and human
+                interaction is more important at the end of the day.
+              </p>
+            </div>
+            <p class="citation" id="Love_citation">
+              <strong>Resource:</strong> Love, B (2020). Teachers, We Cannot Go
+              Back to the Way Things Were. <i>Education Week.</i> Wed Apr 29,
+              2020
+            </p>
+            <p class="citation" id="Love_image_citation">
+              <strong>Image:</strong> Love, B (2020). Teachers, We Cannot Go
+              Back to the Way Things Were. <i>Education Week.</i> Wed Apr 29,
+              2020. [Image, screen capture] Retrieved Nov 30 2020 from
+              <a
+                href="https://www.edweek.org/ew/articles/2020/04/30/teachers-we-cannot-go-back-to-the.html"
+                >https://www.edweek.org/ew/articles/2020/04/30/teachers-we-cannot-go-back-to-the.html</a
+              >
+            </p>
+          </div>
+          <div
+            class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center"
+            id="Delpit"
+          >
+            <img
+              src="img/delpit.png"
+              alt="Delpit"
+              class="img-thumbnail rounded"
+            />
+            <br />
+            <br />
+            <div>
+              <button class="btn btn-success" id="Delpit_toggle_overview">
+                Overview
+              </button>
+              <button class="btn btn-warning" id="Delpit_toggle_evaluation">
+                Evaluation
+              </button>
+              <button class="btn btn-info" id="Delpit_toggle_usage">
+                Usage
+              </button>
+              <button class="btn btn-secondary" id="Delpit_citation_toggle">
+                Show Citations
+              </button>
+            </div>
+            <br />
+            <div id="Delpit_text">
+              <p class="desc" id="Delpit_overview">
+                Overview:<br />
+                Delpit's piece discusses the importance of the process approach
+                compared to simply getting answers. Delpit emphasizes that,
+                "child-centered, whole language, and process approaches are
+                needed in order to allow a democratic state of free, autonomous,
+                empowered adults, and because research has shown that children
+                learn best through those methods" (p 31). These three primary
+                approaches – child-centered, whole language, and process
+                approach – are key in providing stronger education for students
+                as they help build students up and provide the space for
+                students to feel empowered with their education.
+              </p>
+              <p class="evaluation" id="Delpit_evaluation">
+                Evaluation:<br />
+                The emphasis on child-centered, whole language, process
+                approaches are key, as it provides the space for students to be
+                in a problem-posing classroom. In terms of a distanced learning
+                classroom, these are even more important. Getting the answers
+                nowadays is simple courtesy of the Internet and the vast
+                information database out there, however, it is important to know
+                how to get the information we need to know. Breaking down issues
+                is incredibly important and thinking through the process to get
+                a solution to a problem is even more important.
+              </p>
+              <p class="usage" id="Delpit_usage">
+                Usage:<br />
+                Regardless of which curriculum I'm teaching, whether that's
+                Computer Science or Mathematics, I do believe that the process
+                is more important than simply getting the answer. With Computer
+                Science and Programming, there are almost always multiple ways
+                to get the same outcome. We have different methods for writing a
+                single algorithm, some are more efficient than others –
+                sometimes this efficiency comes at a cost of writing far more
+                code. This resource would be used to showcase why its important
+                to think through the process rather than jumping straight to an
+                answer, which is incredibly important for both Computer Science
+                and Mathematics.
+              </p>
+            </div>
+            <p class="citation" id="Delpit_citation">
+              <strong>Resource:</strong> Delpit, L. (1995). The silenced
+              dialogue: Power and pedgogy in educating other people's children.
+              In L. Delpit,
+              <i>Other people's children: Cultural conflict in the classroom</i>
+              (pp. 21-47). New York: The New Press
+            </p>
+            <p class="citation" id="Delpit_image_citation">
+              <strong>Image:</strong> Delpit, L. (1995). The silenced dialogue:
+              Power and pedgogy in educating other people's children. In L.
+              Delpit,
+              <i>Other people's children: Cultural conflict in the classroom</i>
+              (pp. 21-47). New York: The New Press [Image, screen capture]
+              Retrieved Nov 30 2020 from Canvas
+            </p>
+          </div>
+          <div
+            class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center"
+            id="MANG"
+          >
+            <img
+              src="img/moll, amanti, neff, gonzalez.png"
+              alt="Moll, Amanti, Neff, & Gonázlez"
+              class="img-thumbnail rounded"
+            />
+            <br />
+            <br />
+            <div>
+              <button class="btn btn-success" id="MANG_toggle_overview">
+                Overview
+              </button>
+              <button class="btn btn-warning" id="MANG_toggle_evaluation">
+                Evaluation
+              </button>
+              <button class="btn btn-info" id="MANG_toggle_usage">Usage</button>
+              <button class="btn btn-secondary" id="MANG_citation_toggle">
+                Show Citations
+              </button>
+            </div>
+            <br />
+            <div id="MANG_text">
+              <p class="desc" id="MANG_overview">
+                Overview:<br />
+                Moll, Amanti, Neff, & González formed a study looking at how
+                households can influence and help students in classrooms. Moll,
+                et al. were "particularly interested in how families develop
+                social networks that interconnect them with their social
+                environments, and how these social relationships facilitate the
+                development and exchange of resources, including knowledge,
+                skills, and labor, that enhance the households' ability to
+                survive or thrive" (p 133). Their study recognized how important
+                the lifestyle at home is towards an individual's education.
+              </p>
+              <p class="evaluation" id="MANG_evaluation">
+                Evaluation:<br />
+                The study done by Moll et al showcases how important the
+                lifestyle at home is towards the education of an individual.
+                With distanced learning, it's important for us to recognize that
+                some households are more inequitable than others. The households
+                of some students may house more problems than those of others
+                and it's important to really understand this. As we go into a
+                potential post-covid world, the lifestyle at home will continue
+                to impact the education of our fellow students and peer
+                teachers. Therefore it's important to respect the households and
+                help when we can.
+              </p>
+              <p class="usage" id="MANG_usage">
+                Usage:<br />
+                As students come from varying households with varying
+                perspectives and experiences, it's important for students to
+                also understand that the lives we live at home will bleed into
+                our educational environments. I think regardless of the
+                curriculum, in the earlier days, I'd have my students read this
+                as I believe it can help build that empathetic connection
+                between students. That empathetic connection can help build the
+                community and provide a space for students to really understand
+                how different life is per person. This has less to do with any
+                specific curriculum, and more to do with helping students build
+                that empathy between one another.
+              </p>
+            </div>
+            <p id="MANG_citation" class="citation">
+              <strong>Resource:</strong> Moll, L. C., Amanti, C., Neff, D., &
+              González, N. (1992). Funds of knowledge for teaching: Using a
+              qualitative approach to connect homes and classrooms. *<i
+                >Theory into Practice, 31</i
+              >(2), 132-141.
+            </p>
+            <p id="MANG_image_citation" class="citation">
+              <strong>Image:</strong> Moll, L. C., Amanti, C., Neff, D., &
+              González, N. (1992). Funds of knowledge for teaching: Using a
+              qualitative approach to connect homes and classrooms. *<i
+                >Theory into Practice, 31</i
+              >(2), 132-141. [Image, screen capture]. Retrieved Nov 30 2020.
+            </p>
+          </div>
+          <div
+            class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center"
+            id="Ayers"
+          >
+            <img
+              src="img/ayers.jpg"
+              alt="Ayers"
+              class="img-thumbnail rounded"
+            />
+            <br />
+            <br />
+            <div>
+              <button class="btn btn-success" id="Ayers_toggle_overview">
+                Overview
+              </button>
+              <button class="btn btn-warning" id="Ayers_toggle_evaluation">
+                Evaluation
+              </button>
+              <button class="btn btn-info" id="Ayers_toggle_usage">
+                Usage
+              </button>
+              <button class="btn btn-secondary" id="Ayers_citation_toggle">
+                Show Citations
+              </button>
+            </div>
+            <br />
+            <div id="Ayers_text">
+              <p class="desc" id="Ayers_overview">
+                Overview:<br />
+                Ayers' work focuses around how important it is to value
+                students, where we teach "for justice and care" as the title
+                suggests. Ayers' looks at how we, as educators, can create the
+                space for students to feel cared for and listened to. Ayers'
+                suggests that "engagement, thoughtfulness, connectedness,
+                valuing youngsters as third-dimensional beings with their own
+                hopes, dreams, and capacities to build upon–these are the basics
+                in teaching toward democracy and justice and care" (p 18).
+                Ayers' looks at the various directions in which we can support
+                our students, building up our students to feel valued and cared
+                for, which ultimately help them want to pay attention and learn
+                in our classrooms.
+              </p>
+              <p class="evaluation" id="Ayers_evaluation">
+                Evaluation:<br />
+                In creating the space for our students to feel valued, we also
+                generate the space for our students to want to go to school and
+                learn, as they feel welcomed and, again, valued. The feeling of
+                being important and valuable transcends education and connects
+                with some of our basic needs, according to Maslow, of needing to
+                be valued. In creating the space for our students, our students
+                would want to return to our classrooms and get the most out of
+                their education. This is important as their education will help
+                build their character and careers. With distanced learning, we
+                have our limitations, but we can still help foster these types
+                of classrooms with our approach towards teaching.
+              </p>
+              <p class="usage" id="Ayers_usage">
+                Usage:<br />
+                When it comes to usage, this is also important for the field of
+                Computer Science. Our users, ultimately, are human beings. If we
+                can make our users feel welcomed and valued, then they would
+                generally return to our service. In one of the units of
+                Practical Usage of Computer Science, I plan to hold a lesson
+                touching on Psychological aspects where we look at the
+                importance of making our users feel as though they matter – as
+                they do.
+              </p>
+            </div>
+            <p class="citation" id="Ayers_citation">
+              <strong>Resource:</strong> Ayers, W. (2004). Teaching for Justice
+              and Care.
+              <i
+                >Teaching the Personal and the Political: Essays on Hope and
+                Justice.</i
+              >
+              New York: Teachers College Press.
+            </p>
+            <p class="citation" id="Ayers_image_citation">
+              <strong>Image:</strong> Ayers, W. (2004). Teaching for Justice and
+              Care.
+              <i
+                >Teaching the Personal and the Political: Essays on Hope and
+                Justice.</i
+              >
+              Book Cover [Image]. Amazon. Retrieved Nov 30 2020 from
+              <a
+                href="http://ecx.images-amazon.com/images/I/51kws2gzqvL._SY344_BO1,204,203,200_.jpg"
+                >http://ecx.images-amazon.com/images/I/51kws2gzqvL._SY344_BO1,204,203,200_.jpg</a
+              >
+            </p>
+          </div>
+          <div
+            class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-center"
+            id="Nieto"
+          >
+            <img
+              src="img/sonia_nieto.jpg"
+              alt="Nieto"
+              class="img-thumbnail rounded"
+            />
+            <br />
+            <br />
+            <div>
+              <button class="btn btn-success" id="Nieto_toggle_overview">
+                Overview
+              </button>
+              <button class="btn btn-warning" id="Nieto_toggle_evaluation">
+                Evaluation
+              </button>
+              <button class="btn btn-info" id="Nieto_toggle_usage">
+                Usage
+              </button>
+              <button class="btn btn-secondary" id="Nieto_citation_toggle">
+                Show Citations
+              </button>
+            </div>
+            <br />
+            <div id="Nieto_text">
+              <p class="desc" id="Nieto_overview">
+                Overview:<br />
+                Nieto's discusses her experience in classrooms where culture
+                isn't focused on. Nieto analyzes the various aspects important
+                to effective education, such as the way one views learning.
+                Nieto states, "how one views learning leads to dramatically
+                different curricular decisions, pedagogical approaches,
+                expectations of learning, relationships among students,
+                teachers, and families, and indeed, educational outcomes" (pg
+                5). Nieto emphasizes the approach one takes towards education as
+                that is one of the major influences towards effective education.
+              </p>
+              <p class="evaluation" id="Nieto_evaluation">
+                Evaluation:<br />
+                How one views education serves as a major influence as some
+                would view it as a means to learn, while others may see it as a
+                mandatory part of life since those around them are telling them
+                to attend school. For some, education is meaningless, for
+                others, it may mean a lot. Striking that balance is difficult
+                but important, but for students, understanding why they're in
+                school is incredibly important. Nieto's piece looks from a
+                teaching perspective, but can also be used to help students
+                understand their own reasons for education.
+              </p>
+              <p class="usage" id="Nieto_usage">
+                Usage:<br />
+                Understanding our why is more important than our what and how.
+                In the case of Computer Science and Computer Science education,
+                sometimes its important to remember why we started. This piece
+                would be introduced earlier in the year and returned to
+                throughout the curriculum to remind students why they started.
+                That purpose can change throughout the course, but hopefully, it
+                can help drive students to keep going with their goals. Computer
+                Science is difficult, that is true. However, when we have a
+                purpose or a reason to learn, it can be become less frustrating
+                and more rewarding.
+              </p>
+            </div>
+            <p class="citation" id="Nieto_citation">
+              <strong>Resource:</strong> Nieto, S. (2002) Introduction: Language
+              literacy and culture: intersections and implications, pp. 1-24. In
+              S. Nieto
+              <i
+                >Language, culture, and teaching: Critical perspectives for a
+                new century</i
+              >
+            </p>
+            <p class="citation" id="Nieto_image_citation">
+              <strong>Image:</strong> Nieto, S. (2002) Introduction: Language
+              literacy and culture: intersections and implications Book Cover
+              [Image]. Sonia Nieto. Retrieved Nov 30 2020 from
+              <a
+                href="http://www.sonianieto.com/wp-content/uploads/2017/11/lct_3.jpg"
+                >http://www.sonianieto.com/wp-content/uploads/2017/11/lct_3.jpg</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,178 +1,178 @@
 let HIDDEN = true;
-let kumashiro_citation,
-  love_citation,
-  delpit_citation,
-  mang_citation,
-  ayers_citation,
-  nieto_citation;
+let Skills_citation,
+  Inclusion_citation,
+  Experiences_citation,
+  Languages_citation,
+  Homework_citation,
+  Imposter_citation;
 $("document").ready(() => {
   if (HIDDEN) {
-    $("#Kumashiro_overview").hide();
-    $("#Kumashiro_evaluation").hide();
-    $("#Kumashiro_usage").hide();
-    $("#Kumashiro_citation").hide();
-    $("#Kumashiro_image_citation").hide();
+    $("#Skills_overview").hide();
+    $("#Skills_evaluation").hide();
+    $("#Skills_usage").hide();
+    $("#Skills_citation").hide();
+    $("#Skills_image_citation").hide();
 
-    $("#Love_overview").hide();
-    $("#Love_evaluation").hide();
-    $("#Love_usage").hide();
-    $("#Love_citation").hide();
-    $("#Love_image_citation").hide();
+    $("#Inclusion_overview").hide();
+    $("#Inclusion_evaluation").hide();
+    $("#Inclusion_usage").hide();
+    $("#Inclusion_citation").hide();
+    $("#Inclusion_image_citation").hide();
 
-    $("#Delpit_overview").hide();
-    $("#Delpit_evaluation").hide();
-    $("#Delpit_usage").hide();
-    $("#Delpit_citation").hide();
-    $("#Delpit_image_citation").hide();
+    $("#Experiences_overview").hide();
+    $("#Experiences_evaluation").hide();
+    $("#Experiences_usage").hide();
+    $("#Experiences_citation").hide();
+    $("#Experiences_image_citation").hide();
 
-    $("#MANG_overview").hide();
-    $("#MANG_evaluation").hide();
-    $("#MANG_usage").hide();
-    $("#MANG_citation").hide();
-    $("#MANG_image_citation").hide();
+    $("#Languages_overview").hide();
+    $("#Languages_evaluation").hide();
+    $("#Languages_usage").hide();
+    $("#Languages_citation").hide();
+    $("#Languages_image_citation").hide();
 
-    $("#Ayers_overview").hide();
-    $("#Ayers_evaluation").hide();
-    $("#Ayers_usage").hide();
-    $("#Ayers_citation").hide();
-    $("#Ayers_image_citation").hide();
+    $("#Homework_overview").hide();
+    $("#Homework_evaluation").hide();
+    $("#Homework_usage").hide();
+    $("#Homework_citation").hide();
+    $("#Homework_image_citation").hide();
 
-    $("#Nieto_overview").hide();
-    $("#Nieto_evaluation").hide();
-    $("#Nieto_usage").hide();
-    $("#Nieto_citation").hide();
-    $("#Nieto_image_citation").hide();
+    $("#Imposter_overview").hide();
+    $("#Imposter_evaluation").hide();
+    $("#Imposter_usage").hide();
+    $("#Imposter_citation").hide();
+    $("#Imposter_image_citation").hide();
 
-    $("#Kumashiro_citation_toggle").text("Show Citations");
-    $("#Love_citation_toggle").text("Show Citations");
-    $("#Delpit_citation_toggle").text("Show Citations");
-    $("#MANG_citation_toggle").text("Show Citations");
-    $("#Ayers_citation_toggle").text("Show Citations");
-    $("#Nieto_citation_toggle").text("Show Citations");
-    kumashiro_citation = true;
-    love_citation = true;
-    delpit_citation = true;
-    mang_citation = true;
-    ayers_citation = true;
-    nieto_citation = true;
+    $("#Skills_citation_toggle").text("Show Citations");
+    $("#Inclusion_citation_toggle").text("Show Citations");
+    $("#Experiences_citation_toggle").text("Show Citations");
+    $("#Languages_citation_toggle").text("Show Citations");
+    $("#Homework_citation_toggle").text("Show Citations");
+    $("#Imposter_citation_toggle").text("Show Citations");
+    Skills_citation = true;
+    Inclusion_citation = true;
+    Experiences_citation = true;
+    Languages_citation = true;
+    Homework_citation = true;
+    Imposter_citation = true;
   }
 });
-$("#Kumashiro_toggle_overview").click(() => {
-  $("#Kumashiro_overview").toggle();
+$("#Skills_toggle_overview").click(() => {
+  $("#Skills_overview").toggle();
 });
-$("#Kumashiro_toggle_evaluation").click(() => {
-  $("#Kumashiro_evaluation").toggle();
+$("#Skills_toggle_evaluation").click(() => {
+  $("#Skills_evaluation").toggle();
 });
-$("#Kumashiro_toggle_usage").click(() => {
-  $("#Kumashiro_usage").toggle();
+$("#Skills_toggle_usage").click(() => {
+  $("#Skills_usage").toggle();
 });
-$("#Kumashiro_citation_toggle").click(() => {
-  kumashiro_citation = !kumashiro_citation;
-  $("#Kumashiro_citation").toggle();
-  $("#Kumashiro_image_citation").toggle();
-  if (kumashiro_citation) {
-    $("#Kumashiro_citation_toggle").text("Show Citations");
+$("#Skills_citation_toggle").click(() => {
+  Skills_citation = !Skills_citation;
+  $("#Skills_citation").toggle();
+  $("#Skills_image_citation").toggle();
+  if (Skills_citation) {
+    $("#Skills_citation_toggle").text("Show Citations");
   } else {
-    $("#Kumashiro_citation_toggle").text("Hide Citations");
-  }
-});
-
-$("#Love_toggle_overview").click(() => {
-  $("#Love_overview").toggle();
-});
-$("#Love_toggle_evaluation").click(() => {
-  $("#Love_evaluation").toggle();
-});
-$("#Love_toggle_usage").click(() => {
-  $("#Love_usage").toggle();
-});
-$("#Love_citation_toggle").click(() => {
-  love_citation = !love_citation;
-  $("#Love_citation").toggle();
-  $("#Love_image_citation").toggle();
-  if (love_citation) {
-    $("#Love_citation_toggle").text("Show Citations");
-  } else {
-    $("#Love_citation_toggle").text("Hide Citations");
+    $("#Skills_citation_toggle").text("Hide Citations");
   }
 });
 
-$("#Delpit_toggle_overview").click(() => {
-  $("#Delpit_overview").toggle();
+$("#Inclusion_toggle_overview").click(() => {
+  $("#Inclusion_overview").toggle();
 });
-$("#Delpit_toggle_evaluation").click(() => {
-  $("#Delpit_evaluation").toggle();
+$("#Inclusion_toggle_evaluation").click(() => {
+  $("#Inclusion_evaluation").toggle();
 });
-$("#Delpit_toggle_usage").click(() => {
-  $("#Delpit_usage").toggle();
+$("#Inclusion_toggle_usage").click(() => {
+  $("#Inclusion_usage").toggle();
 });
-$("#Delpit_citation_toggle").click(() => {
-  delpit_citation = !delpit_citation;
-  $("#Delpit_citation").toggle();
-  $("#Delpit_image_citation").toggle();
-  if (delpit_citation) {
-    $("#Delpit_citation_toggle").text("Show Citations");
+$("#Inclusion_citation_toggle").click(() => {
+  Inclusion_citation = !Inclusion_citation;
+  $("#Inclusion_citation").toggle();
+  $("#Inclusion_image_citation").toggle();
+  if (Inclusion_citation) {
+    $("#Inclusion_citation_toggle").text("Show Citations");
   } else {
-    $("#Delpit_citation_toggle").text("Hide Citations");
+    $("#Inclusion_citation_toggle").text("Hide Citations");
   }
 });
 
-$("#MANG_toggle_overview").click(() => {
-  $("#MANG_overview").toggle();
+$("#Experiences_toggle_overview").click(() => {
+  $("#Experiences_overview").toggle();
 });
-$("#MANG_toggle_evaluation").click(() => {
-  $("#MANG_evaluation").toggle();
+$("#Experiences_toggle_evaluation").click(() => {
+  $("#Experiences_evaluation").toggle();
 });
-$("#MANG_toggle_usage").click(() => {
-  $("#MANG_usage").toggle();
+$("#Experiences_toggle_usage").click(() => {
+  $("#Experiences_usage").toggle();
 });
-$("#MANG_citation_toggle").click(() => {
-  mang_citation = !mang_citation;
-  $("#MANG_citation").toggle();
-  $("#MANG_image_citation").toggle();
-  if (mang_citation) {
-    $("#MANG_citation_toggle").text("Show Citations");
+$("#Experiences_citation_toggle").click(() => {
+  Experiences_citation = !Experiences_citation;
+  $("#Experiences_citation").toggle();
+  $("#Experiences_image_citation").toggle();
+  if (Experiences_citation) {
+    $("#Experiences_citation_toggle").text("Show Citations");
   } else {
-    $("#MANG_citation_toggle").text("Hide Citations");
+    $("#Experiences_citation_toggle").text("Hide Citations");
   }
 });
 
-$("#Ayers_toggle_overview").click(() => {
-  $("#Ayers_overview").toggle();
+$("#Languages_toggle_overview").click(() => {
+  $("#Languages_overview").toggle();
 });
-$("#Ayers_toggle_evaluation").click(() => {
-  $("#Ayers_evaluation").toggle();
+$("#Languages_toggle_evaluation").click(() => {
+  $("#Languages_evaluation").toggle();
 });
-$("#Ayers_toggle_usage").click(() => {
-  $("#Ayers_usage").toggle();
+$("#Languages_toggle_usage").click(() => {
+  $("#Languages_usage").toggle();
 });
-$("#Ayers_citation_toggle").click(() => {
-  ayers_citation = !ayers_citation;
-  $("#Ayers_citation").toggle();
-  $("#Ayers_image_citation").toggle();
-  if (ayers_citation) {
-    $("#Ayers_citation_toggle").text("Show Citations");
+$("#Languages_citation_toggle").click(() => {
+  Languages_citation = !Languages_citation;
+  $("#Languages_citation").toggle();
+  $("#Languages_image_citation").toggle();
+  if (Languages_citation) {
+    $("#Languages_citation_toggle").text("Show Citations");
   } else {
-    $("#Ayers_citation_toggle").text("Hide Citations");
+    $("#Languages_citation_toggle").text("Hide Citations");
   }
 });
 
-$("#Nieto_toggle_overview").click(() => {
-  $("#Nieto_overview").toggle();
+$("#Homework_toggle_overview").click(() => {
+  $("#Homework_overview").toggle();
 });
-$("#Nieto_toggle_evaluation").click(() => {
-  $("#Nieto_evaluation").toggle();
+$("#Homework_toggle_evaluation").click(() => {
+  $("#Homework_evaluation").toggle();
 });
-$("#Nieto_toggle_usage").click(() => {
-  $("#Nieto_usage").toggle();
+$("#Homework_toggle_usage").click(() => {
+  $("#Homework_usage").toggle();
 });
-$("#Nieto_citation_toggle").click(() => {
-  nieto_citation = !nieto_citation;
-  $("#Nieto_citation").toggle();
-  $("#Nieto_image_citation").toggle();
-  if (nieto_citation) {
-    $("#Nieto_citation_toggle").text("Show Citations");
+$("#Homework_citation_toggle").click(() => {
+  Homework_citation = !Homework_citation;
+  $("#Homework_citation").toggle();
+  $("#Homework_image_citation").toggle();
+  if (Homework_citation) {
+    $("#Homework_citation_toggle").text("Show Citations");
   } else {
-    $("#Nieto_citation_toggle").text("Hide Citations");
+    $("#Homework_citation_toggle").text("Hide Citations");
+  }
+});
+
+$("#Imposter_toggle_overview").click(() => {
+  $("#Imposter_overview").toggle();
+});
+$("#Imposter_toggle_evaluation").click(() => {
+  $("#Imposter_evaluation").toggle();
+});
+$("#Imposter_toggle_usage").click(() => {
+  $("#Imposter_usage").toggle();
+});
+$("#Imposter_citation_toggle").click(() => {
+  Imposter_citation = !Imposter_citation;
+  $("#Imposter_citation").toggle();
+  $("#Imposter_image_citation").toggle();
+  if (Imposter_citation) {
+    $("#Imposter_citation_toggle").text("Show Citations");
+  } else {
+    $("#Imposter_citation_toggle").text("Hide Citations");
   }
 });

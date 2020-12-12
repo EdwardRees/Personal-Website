@@ -1,3 +1,11 @@
+
+let prod = true;
+
+if (prod) {
+  console.info = function () {};
+  console.group = function() {};
+}
+
 const encrypt = () => {
   let num1 = document.getElementById("num1").value;
   let num2 = document.getElementById("num2").value;

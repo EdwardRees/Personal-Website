@@ -207,20 +207,17 @@ hr.small {
  line-height: 1.1;
 }
 
-.job .company {
-    
-}
 .job .title {
     font-weight: 600;
 }
 
 .job .date {
-    color: #606060;
+    /* color: #606060; */
     font-size: 15px;
 }
 
 .job .location {
-    color: #606060;
+    /* color: #606060; */
     font-size: 15px;
 }
 .job .desc {

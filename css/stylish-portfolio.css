@@ -156,7 +156,8 @@ hr.small {
     position: relative;
     width: 100%;
     height: 85%;
-    background: url(../img/sunset.jpg) no-repeat center center scroll;
+    /* background: url(../img/sunset.jpg) no-repeat center center scroll; */
+    background: url(../img/skyline.png) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -180,11 +181,30 @@ hr.small {
     margin-bottom: 30px;
 }
 
-.background {
+.primary {
     /* background-color: #4682B4; */
-    background-color: #165c7d;
-    ;
+    background-color: #0a4d70;
     color: white;
+  }
+  .primary a {
+    color: white;
+  }
+  
+  .secondary {
+  /* background-color: #165c7d; */
+  background-color: #356B88;
+  color: white;
+}
+.secondary a {
+  color: white;
+}
+
+.ternary {
+  background-color: #467A93;
+  color: white;
+}
+.ternary a {
+  color: white;
 }
 
 .institute {
@@ -235,12 +255,12 @@ hr.small {
 }
 
 .job .date {
-    color: #606060;
+    /* color: #606060; */
     font-size: 15px;
 }
 
 .job .location {
-    color: #606060;
+    /* color: #606060; */
     font-size: 15px;
 }
 

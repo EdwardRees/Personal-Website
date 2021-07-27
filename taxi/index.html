@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Taxi Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./calculate.js" type="text/javascript"></script>
+  <style>
+    body {
+      background-color: #33445b;
+      color: #fff;
+      font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    input {
+      padding: 5pt 10pt;
+      border-radius: 5pt;
+      border: none;
+      font-size: 12pt;
+    }
+    .container {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .center {
+      text-align: center;
+    }
+    .group {
+      display: flex;
+      flex: 1;
+      width: 90vw;
+      padding: 5pt 100pt;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 15pt;
+    }
+    .btn {
+      padding: 10pt 15pt;
+      border-radius: 10pt;
+      border: none;
+      font-size: 15pt;
+    }
+
+    .btn-primary {
+      background-color: #5372a0;
+      color: #fff;
+    }
+
+
+  </style>
+</head>
+
+<body onload="calculateButton()">
+  <h1 class="center">Taxi Fare Calculator</h1>
+  <div class="container">
+    <div class="group">
+      <label for="distance">
+        Distance in KM
+      </label>
+      <input type="number" name="distance" id="distance" value="0" min="0" step="0.2" onkeyup="calculateButton()">
+    </div>
+    <div class="group">
+      <label for="tunnelFee">
+        Tunnel Fee in HKD
+      </label>
+      <input type="number" name="tunnelFee" id="tunnelFee" value="0" min="0" step="0.2"  onkeyup="calculateButton()">
+    </div>
+    <div class="group">
+      <label for="trunkBaggageNum">
+        Number of Baggage in Trunk
+      </label>
+      <input type="number" name="trunkBaggageNum" id="trunkBaggageNum" value="0" min="0" step="0.2"  onkeyup="calculateButton()">
+    </div>
+    <div class="group">
+      <label for="trafficWait">
+        Potential traffic wait time in minutes
+      </label>
+      <input type="number" name="trafficWait" id="trafficWait" value="0" min="0"  step="0.2" onkeyup="calculateButton()">
+    </div>
+    <div class="group">
+      <label for="extras">
+        Extra Fees in HKD
+      </label>
+      <input type="number" name="extras" id="extras" value="0" min="0" step="0.2" onkeyup="calculateButton()">
+    </div>
+    <br>
+    <div class="center">
+      <button class="btn btn-primary" onclick="calculateButton()">Calculate</button>
+    </div>
+  </div>
+
+  <div class="center" id="cost"></div>
+
+
+</body>
+
+</html>

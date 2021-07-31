@@ -11,14 +11,16 @@
     body {
       background-color: #33445b;
       color: #fff;
-      font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
+
     input {
       padding: 5pt 10pt;
       border-radius: 5pt;
       border: none;
       font-size: 12pt;
     }
+
     .container {
       display: flex;
       flex: 1;
@@ -26,9 +28,11 @@
       justify-content: center;
       align-items: center;
     }
+
     .center {
       text-align: center;
     }
+
     .group {
       display: flex;
       flex: 1;
@@ -39,6 +43,7 @@
       justify-content: space-between;
       font-size: 15pt;
     }
+
     .btn {
       padding: 10pt 15pt;
       border-radius: 10pt;
@@ -50,8 +55,6 @@
       background-color: #5372a0;
       color: #fff;
     }
-
-
   </style>
 </head>
 
@@ -62,31 +65,36 @@
       <label for="distance">
         Distance in KM
       </label>
-      <input type="number" name="distance" id="distance" value="0" min="0" step="0.2" onkeyup="calculateButton()">
+      <input type="number" name="distance" id="distance" value="0" min="0" step="0.2"
+        onkeyup="calculateButton()">
     </div>
     <div class="group">
       <label for="tunnelFee">
         Tunnel Fee in HKD
       </label>
-      <input type="number" name="tunnelFee" id="tunnelFee" value="0" min="0" step="0.2"  onkeyup="calculateButton()">
+      <input type="number" name="tunnelFee" id="tunnelFee" value="0" min="0" step="0.2"
+        onkeyup="calculateButton()">
     </div>
     <div class="group">
       <label for="trunkBaggageNum">
         Number of Baggage in Trunk
       </label>
-      <input type="number" name="trunkBaggageNum" id="trunkBaggageNum" value="0" min="0" step="0.2"  onkeyup="calculateButton()">
+      <input type="number" name="trunkBaggageNum" id="trunkBaggageNum" value="0" min="0" step="0.2"
+        onkeyup="calculateButton()">
     </div>
     <div class="group">
       <label for="trafficWait">
         Potential traffic wait time in minutes
       </label>
-      <input type="number" name="trafficWait" id="trafficWait" value="0" min="0"  step="0.2" onkeyup="calculateButton()">
+      <input type="number" name="trafficWait" id="trafficWait" value="0" min="0" step="0.2"
+        onkeyup="calculateButton()">
     </div>
     <div class="group">
       <label for="extras">
         Extra Fees in HKD
       </label>
-      <input type="number" name="extras" id="extras" value="0" min="0" step="0.2" onkeyup="calculateButton()">
+      <input type="number" name="extras" id="extras" value="0" min="0" step="0.2"
+        onkeyup="calculateButton()">
     </div>
     <br>
     <div class="center">
@@ -96,7 +104,54 @@
 
   <div class="center" id="cost"></div>
 
-  <script src="./calculate.js"></script>
+  <script>
+
+    const TRUNK = 6;
+    const TRAFFIC_PRE_MULTIPLIER = 1.7;
+    const INITIAL = 24;
+    const TRAFFIC_POST_MULTIPLIER = 1.2;
+    const CHANGE_POINT = 83.5;
+
+    const calculate = (dist, tunnel, trunk, traffic, extra) => {
+      let tunnelCost = parseFloat(tunnel);
+      let trunkCost = parseInt(trunk) * TRUNK;
+      let trafficCostPreChange = parseInt(traffic) * TRAFFIC_PRE_MULTIPLIER;
+      let extraCost = parseFloat(extra);
+
+      let change = (parseFloat(dist) - 2 > 0) ? parseFloat(dist) - 2 : 0;
+      let initial = INITIAL;
+      let numOfUpdates = ((change * 1000) / 200);
+      let updates = parseInt(Math.round(numOfUpdates));
+      let distCostPreChange = initial + (updates * TRAFFIC_PRE_MULTIPLIER);
+      let totalCostPreChange = Math.round((distCostPreChange + tunnelCost + trunkCost + trafficCostPreChange + extraCost) * 100) / 100;
+
+
+      let trafficCostPostChange = parseInt(traffic) * TRAFFIC_POST_MULTIPLIER;
+
+      let changePostChange = totalCostPreChange > CHANGE_POINT ? ((((totalCostPreChange - tunnelCost - trunkCost - trafficCostPreChange - extraCost) - initial) / TRAFFIC_PRE_MULTIPLIER) * 200 / 1000) - 7 : change;
+      changePostChange = Math.round(changePostChange * 100) / 100;
+      let numUpdatesPostChange = (changePostChange * 1000) / 200;
+      let updatesPostChange = parseInt(Math.round(numUpdatesPostChange))
+      let distCostPostChange = totalCostPreChange > CHANGE_POINT ? CHANGE_POINT + (updatesPostChange * TRAFFIC_POST_MULTIPLIER) : distCostPreChange;
+
+      let totalCostPostChange = totalCostPreChange > CHANGE_POINT ? Math.round((distCostPostChange + tunnelCost + trunkCost + trafficCostPostChange + extraCost) * 100) / 100 : totalCostPreChange;
+
+      return totalCostPostChange;
+    }
+
+    const calculateButton = () => {
+      let distance = document.getElementById("distance").value;
+      let tunnelFee = document.getElementById("tunnelFee").value;
+      let trunkBaggageQuantity = document.getElementById("trunkBaggageNum").value;
+      let trafficWaitTime = document.getElementById("trafficWait").value;
+      let extraCosts = document.getElementById("extras").value;
+      let res = calculate(distance, tunnelFee, trunkBaggageQuantity, trafficWaitTime, extraCosts);
+      if (isNaN(res)) {
+        res = 24;
+      }
+      document.getElementById("cost").innerHTML = `<h2><b>Cost:</b> ≈${res}<br/><br/></h2>`
+    }
+  </script>
 </body>
 
 </html>

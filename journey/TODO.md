@@ -94,11 +94,15 @@ Frameworks:
 
 ### 2018
 
-Start of University; Start of Formal Education
+Start of University; Start of Formal Education in Computer Science
 
 Courses:
 
 - CS110: Introduction to Computer Science I
+
+Projects:
+
+- [Personal Website (Technically earlier, but let's say 2018)](https://github.com/EdwardR5/EdwardRees.github.io/)
 
 Languages:
 
@@ -106,7 +110,9 @@ Languages:
 
 ### 2019
 
-Start of Educational aspect of studying Computer Science
+Start of approach towards Education, with a focus on Computer Science Education
+
+Beginnings of interest towards teaching Computer Science
 
 Key educational point during and after CS112
 
@@ -123,10 +129,10 @@ Projects:
 - [PBIHealth](https://pbihealth.com/)
 - [React Native Update Scripts](https://github.com/EdwardRees/ReactNativeScripts)
 - [Resume Generator](https://github.com/EdwardRees/Resume-Generator)
-- [Japan Transportation Graph](https://github.com/EdwardRees/Japan-Trip-Transportation-Graph)
-- [myFlexi](https://github.com/EdwardRees/myFlexi-Project)
 - [Spell Checker](https://github.com/EdwardRees/cs-245-assignment-01-EdwardR1)
 - [IMDB Graph](https://github.com/EdwardRees/cs-245-assignment-02-EdwardR1)
+- [myFlexi](https://github.com/EdwardRees/myFlexi-Project)
+- [Japan Transportation Graph](https://github.com/EdwardRees/Japan-Trip-Transportation-Graph)
 
 Languages:
 
@@ -164,7 +170,7 @@ Projects:
 - [Byte Education](https://github.com/EdwardRees/programming-tutorials)
 - [Fibonacci Generator](https://github.com/EdwardRees/Fibonacci-Generator)
 - [Simple Gratitude Journal](https://github.com/EdwardRees/Simple-Gratitude-Journal)
-- [Cusotm Top](https://github.com/EdwardRees/Custom-Top)
+- [Custom Top / Inspector](https://github.com/EdwardRees/Custom-Top)
 - [Simple Games](https://github.com/EdwardRees/Games)
 - [Morse Code Converter](https://github.com/Byte-Education/Morse-Code-Converter)
 - [Mathematical Functions](https://github.com/Byte-Education/Mathematical-Functions)
@@ -228,3 +234,4 @@ Frameworks / Libraries:
 Include React Native Projects
 Connect React Native folder to Github with current organization format
 Reorder by dates
+Add project descriptions for each project

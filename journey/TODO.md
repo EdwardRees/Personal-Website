@@ -21,7 +21,7 @@ Languages:
 
 ### 2014
 
-The Start of Something New
+Playing around and trying out creating Mods for Minecraft
 
 First Minecraft Mod
 
@@ -33,7 +33,7 @@ Languages:
 
 ### 2015-16
 
-The start of a foundation forming
+Early formation of Foundation; Weak foundation, but slowly forming
 
 Courses:
 

@@ -10,6 +10,11 @@
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <title>Edward Rees</title>
   <script src="js/toggle.js"></script>
+  <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <script src="components/index.js" type="text/babel"></script>
 
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -349,7 +354,7 @@
               <br /><br />
             </div>
           </div>
-          
+
           <div class="job text-left">
             <div class="col-sm-1">
               <i class="fas fa-chalkboard-teacher" style="font-size: 50px;"></i>
@@ -412,9 +417,10 @@
               <i class="fas fa-chalkboard-teacher" style="font-size: 50px;"></i>
             </div>
             <div class="col-sm-5 text-left">
-              <span class="date">Aug 2021-Dec 2021</span>
+              <span class="date">Jan 2022-May 2022</span>
               <br />
-              <span class="company"><a href="https://www.gatewaypublicschools.org/gms/" target="_blank">Gateway Middle School</a></span>
+              <span class="company"><a href="https://www.gatewaypublicschools.org/gms/"
+                  target="_blank">Gateway High School</a></span>
               <br />
               <span class="location">San Francisco, CA</span>
             </div>
@@ -422,7 +428,32 @@
               <span class="title">Fieldwork Mentee</span>
               <br />
               <span class="description">
-                <li>Provided support with small group work in a Seventh Grade Mathematics classroom</li>
+                <li>Provided support with small group work in a 9th Grade Algebra Classroom
+                </li>
+                <li>Led whole class activities including, but not limited to Note Taking, Group
+                  Discussions, Group Work, and preparation for a Socratic Seminar.</li>
+              </span>
+              <br /><br />
+            </div>
+          </div>
+          <div class="job text-left">
+            <div class="col-sm-1">
+              <i class="fas fa-chalkboard-teacher" style="font-size: 50px;"></i>
+            </div>
+            <div class="col-sm-5 text-left">
+              <span class="date">Aug 2021-Dec 2021</span>
+              <br />
+              <span class="company"><a href="https://www.gatewaypublicschools.org/gms/"
+                  target="_blank">Gateway Middle School</a></span>
+              <br />
+              <span class="location">San Francisco, CA</span>
+            </div>
+            <div class="col-sm-6">
+              <span class="title">Fieldwork Mentee</span>
+              <br />
+              <span class="description">
+                <li>Provided support with small group work in a Seventh Grade Mathematics classroom
+                </li>
                 <li>Provided support with lessons, keeping students focused and engaged</li>
               </span>
               <br /><br />
@@ -492,7 +523,9 @@
                   <li>Created an automated web scraper, using Selenium and BeautifulSoup4, that logs
                     in a user, then scrapes 150 pages in approximately 15 minutes to aid with yearly
                     data processing.</li>
-                  <li>Created an automated web scraper, using Selenium, that downloads a file, then parses the file, replacing empty values with NULL values, then updates an SQL Database, using mysql-connector-python.</li>
+                  <li>Created an automated web scraper, using Selenium, that downloads a file, then
+                    parses the file, replacing empty values with NULL values, then updates an SQL
+                    Database, using mysql-connector-python.</li>
                 </ul>
                 <h4 data-toggle="collapse" href="#hkisJS">Tasks in JavaScript</h4>
                 <ul class="collapse" id="hkisJS">
@@ -514,8 +547,14 @@
                   <li>Created a Student search that searches for students in the database based on
                     their first, preferred, or last name, with an additional filter for grade level
                   </li>
-                  <li>Updated the student health page to include COVID related information - vaccinations, infection dates, etc - along with showing the information of infectious diseases and health concerns</li>
-                  <li>Created a Student test view that shows a chart showcasing the students' test results over a period of time and how they've grown over that period. Test view includes a filter to allow for toggling and showing specific tests, to allow the user to choose which test to view. Each chart is accompanied by a table showing the raw data to provide the user with different views.</li>
+                  <li>Updated the student health page to include COVID related information -
+                    vaccinations, infection dates, etc - along with showing the information of
+                    infectious diseases and health concerns</li>
+                  <li>Created a Student test view that shows a chart showcasing the students' test
+                    results over a period of time and how they've grown over that period. Test view
+                    includes a filter to allow for toggling and showing specific tests, to allow the
+                    user to choose which test to view. Each chart is accompanied by a table showing
+                    the raw data to provide the user with different views.</li>
                   <li>Created a guide to three new pages, explaining how to use the new search
                     systems</li>
                 </ul>

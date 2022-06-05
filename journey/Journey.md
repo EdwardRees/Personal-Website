@@ -107,6 +107,7 @@ Projects:
 Languages:
 
 - Python
+- JavaScript
 
 ### 2019
 
@@ -228,6 +229,50 @@ Frameworks / Libraries:
 - ExpressJS
 - MongoDB
 - React
+
+### 2022
+
+Last semester of Undergraduate Computer Science studies
+
+Courses:
+
+- CS 333: Introduction to Database Systems
+- CS 490: Senior Team Project
+
+Projects:
+
+- [Base Converters](https://github.com/EdwardRees/Base-Converters)
+- [Jekyll Blog](https://github.com/EdwardRees/edward-rees-blog)
+- [Programming Language Speed Comparison](https://github.com/EdwardRees/Programming-Language-Speed-Comparison)
+- [React Native Workshop](https://github.com/EdwardRees/React-Native-Workshop)
+- [Simple Todo Project](https://github.com/EdwardRees/Simple-Todo-Project)
+- [Were Not Really Strangers](https://github.com/EdwardRees/wnrs-online)
+- [Movie Database](https://github.com/EdwardRees/Movie-Database)
+- [Habit Tracking App](https://github.com/sfdevshop/habit-tracking-app)
+- [Self Care Project](https://github.com/EdwardRees/Self-Care-Project)
+
+Languages:
+
+- HTML
+- CSS
+- JavaScript
+- TypeScript
+- SQL
+- C
+- C++
+- Ruby
+- Python
+
+Frameworks / Libraries:
+
+- React Native
+- React
+- PostgreSQL
+- ExpressJS
+- Prisma
+- Sequelize
+- Jekyll
+- Qt
 
 ## TODO
 

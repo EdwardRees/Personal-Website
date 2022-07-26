@@ -249,7 +249,10 @@ Projects:
 - [Were Not Really Strangers](https://github.com/EdwardRees/wnrs-online)
 - [Movie Database](https://github.com/EdwardRees/Movie-Database)
 - [Habit Tracking App](https://github.com/sfdevshop/habit-tracking-app)
-- [Self Care Project](https://github.com/EdwardRees/Self-Care-Project)
+- [Summer Camp Lessons](https://github.com/EdwardRees/dev.edwardrees.info)
+- [Self Care Project](https://github.com/Self-Care-Project/Journal)
+- [PERN Todo List](https://github.com/EdwardRees/Todo-Project)
+- [Morse Code Converter App](https://github.com/EdwardRees/MorseCodeConverter)
 
 Languages:
 
@@ -262,6 +265,7 @@ Languages:
 - C++
 - Ruby
 - Python
+- C#
 
 Frameworks / Libraries:
 
@@ -273,6 +277,8 @@ Frameworks / Libraries:
 - Sequelize
 - Jekyll
 - Qt
+- WindowsForms
+- Pygame
 
 ## TODO
 

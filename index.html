@@ -193,7 +193,7 @@
                   <strong>Programming Tutor</strong>
                 </h4>
                 <p>
-                  I can teach HTML5, CSS3, JavaScript, TypeScript, Python, Java, and C. It
+                  I can teach HTML5, CSS3, JavaScript, TypeScript, Python, Java, C, and C#. It
                   depends on what you want to do. I can help you understand
                   any of the programming languages I have experience with.
                 </p>
@@ -286,10 +286,8 @@
             Experience
           </h2>
           <hr class="small" />
-          <!-- Add a filter bar that will filter through what to show; can be done with pure JS -->
-          <!-- Done with dropdown options rather than search bar -->
-          <div class="text-right">
-            <span class="filter-text">show: </span>
+          <div class="text-center">
+            <span class="filter-text">filter: </span>
             <select name="filter" id="filter" class="filter" onchange="handleFilter()">
               <option value="all">All</option>
               <option value="tech">Technology</option>
@@ -694,8 +692,18 @@
         <div class="col-md-12">
           <h1>Programming Languages</h1>
           <hr class="small">
-          <h3>Languages</h3>
+          <span class="language-filter-text">filter: </span>
+          <select name="language-filter" id="language-filter" class="language-filter"
+            onchange="handleLanguageFilter()">
+            <option value="all">All</option>
+            <option value="languages">Languages</option>
+            <option value="frameworks-libraries">Web Frameworks &amp; Libraries</option>
+            <option value="mobile-development">Mobile Development</option>
+            <option value="operating-systems">Operating Systems</option>
+          </select>
+          <br />
           <div class="row text-center languages">
+            <h3>Languages</h3>
             <div class="col-md-2 col-sm-4 col-xs-6 hovereffect">
               <img src="./img/languages/html5.png" alt="" height="100" />
               <div class="overlay">
@@ -796,7 +804,7 @@
           <div class="row">
             <br />
           </div>
-          <div class="row text-center languages">
+          <div class="row text-center frameworks-libraries">
             <h3>Web Frameworks &amp; Libraries</h3>
             <div class="col-md-3 col-sm-4 col-xs-6 hovereffect">
               <img src="./img/languages/Boostrap_logo.png" alt="" height="100" />
@@ -836,7 +844,7 @@
             </div>
 
           </div>
-          <div class="row text-center languages">
+          <div class="row text-center mobile-development">
             <h3>Mobile Development</h3>
             <div class="col-md-3 col-sm-6 col-xs-6 hovereffect">
               <img src="./img/languages/react.png" alt="React" height="100">
@@ -1120,6 +1128,7 @@
   <script src="js/bootstrap.min.js"></script>
 
   <script src="js/filter.js"></script>
+  <script src="js/language-filter.js"></script>
   <script src="js/menu.js"></script>
 
   <!-- Custom Theme JavaScript -->

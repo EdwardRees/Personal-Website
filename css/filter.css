@@ -1,7 +1,26 @@
 .filter {
-  color: #000;
+  color: #fff;
   font-size: 1.5rem;
+  border-radius: 1rem;
+  outline: none;
+  padding: 0.25rem;
+  border: 1pt solid #fff;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .filter-text {
+  font-size: 1.5rem;
+}
+
+.language-filter {
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  outline: none;
+  padding: 0.25rem;
+  border: 1pt solid #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.language-filter-text {
   font-size: 1.5rem;
 }

@@ -9,7 +9,6 @@
   <meta name="author" content="Edward Rees" />
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <title>Edward Rees</title>
-  <script src="js/toggle.js"></script>
   <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
@@ -19,6 +18,7 @@
   <!-- Bootstrap Core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/references.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/filter.css">
 
   <!-- Custom CSS -->
   <link href="css/stylish-portfolio.css" rel="stylesheet" />
@@ -27,30 +27,12 @@
   <link
     href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
     rel="stylesheet" type="text/css" />
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85919217-4"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "UA-85919217-4");
-  </script>
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
   <script>
     const toggleMenu = () => {
-      $("#menu-close").click();
+      document.getElementById("sidebar-wrapper").classList.toggle("active");
     };
   </script>
   <!-- Navigation -->
@@ -59,7 +41,8 @@
   </a>
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
-      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"
+        onclick="toggleMenu()">
         <i class="fa fa-times"></i>
       </a>
       <li class="sidebar-brand">
@@ -183,7 +166,8 @@
                 <p>
                   I can help you create a website's front end using HTML, CSS, and JavaScript.
                   Furthermore, I can help create a back end using NodeJS. Additional libraries for
-                  front end development include utilizing Bootstrap, Tailwindcss, React.js, and Vue.js.
+                  front end development include utilizing Bootstrap, Tailwindcss, React.js, and
+                  Vue.js.
                 </p>
               </div>
             </div>
@@ -304,6 +288,16 @@
           <hr class="small" />
           <!-- Add a filter bar that will filter through what to show; can be done with pure JS -->
           <!-- Done with dropdown options rather than search bar -->
+          <div class="text-right">
+            <span class="filter-text">show: </span>
+            <select name="filter" id="filter" class="filter" onchange="handleFilter()">
+              <option value="all">All</option>
+              <option value="tech">Technology</option>
+              <option value="teaching">Teaching</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <br />
 
           <div class="job text-left teaching">
             <div class="col-sm-1">
@@ -361,14 +355,16 @@
               <br />
               <span class="description">
                 <li>
-                  Teaching students from 8-17 programming in Scratch, Python, JavaScript, Java, and C#
+                  Teaching students from 8-17 programming in Scratch, Python, JavaScript, Java, and
+                  C#
                 </li>
                 <li>Helped a student develop a mobile application using React Native</li>
                 <li>Taught a student data structures in Python</li>
                 <li>Taught a student how to create an autocorrect system using Python and a Trie
                   data structure</li>
                 <li>Taught a student full stack development using the PERN Stack</li>
-                <li>Taught a student how to create a Graphical User Interface using C# and the .NET Framework</li>
+                <li>Taught a student how to create a Graphical User Interface using C# and the .NET
+                  Framework</li>
                 <li>Taught Test Driven Development</li>
                 <li>Led three Summer camps teaching Python and basic web design</li>
               </span>
@@ -1108,29 +1104,39 @@
     </a>
   </footer>
 
-  <script>
-    $(document).ready(() => {
-      $(".year-text").html(`<span>${new Date().getFullYear()}</span>`);
-    })
-  </script>
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
+  <script>
+    document.onreadystatechange = () => {
+      if (document.readyState === "interactive") {
+        const yearTextNodes = document.getElementsByClassName("year-text");
+        for (let i = 0; i < yearTextNodes.length; i++) {
+          yearTextNodes[i].innerHTML = `<span>${new Date().getFullYear()}</span>`;
+        }
+      }
+    }
+  </script>
 
   <!-- Bootstrap Core JavaScript -->
   <script src="js/bootstrap.min.js"></script>
 
+  <script src="js/filter.js"></script>
+
   <!-- Custom Theme JavaScript -->
   <script>
     // Closes the sidebar menu
-    $("#menu-close").click(function (e) {
+    document.getElementById("menu-close").addEventListener("click", function (e) {
       e.preventDefault();
-      $("#sidebar-wrapper").toggleClass("active");
+      document.getElementById("sidebar-wrapper").classList.remove("active");
     });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function (e) {
+
+    // toggle sidebar menu
+    document.getElementById("menu-toggle").addEventListener("click", function (e) {
       e.preventDefault();
-      $("#sidebar-wrapper").toggleClass("active");
+      document.getElementById("sidebar-wrapper").classList.toggle("active");
     });
+
+
     // Scrolls to the selected menu item on the page
     $(function () {
       $(
@@ -1182,34 +1188,7 @@
         }
       }
     });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function (event) {
-      var that = $(this);
-      that.on("click", onMapClickHandler);
-      that.off("mouseleave", onMapMouseleaveHandler);
-      that.find("iframe").css("pointer-events", "none");
-    };
-    var onMapClickHandler = function (event) {
-      var that = $(this);
-      // Disable the click handler until the user leaves the map area
-      that.off("click", onMapClickHandler);
-      // Enable scrolling zoom
-      that.find("iframe").css("pointer-events", "auto");
-      // Handle the mouse leave event
-      that.on("mouseleave", onMapMouseleaveHandler);
-    };
-    // Enable map zooming with mouse scroll when the user clicks the map
-    $(".map").on("click", onMapClickHandler);
   </script>
-  <!-- Contact Form JavaScript -->
-
-  <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-
-  <script src="js/jqBootstrapValidation.js"></script>
-
-  <script src="js/contact_me.js"></script>
 
   <script src="/fontawesome-5.14/js/all.js"></script>
 </body>

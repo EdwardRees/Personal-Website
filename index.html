@@ -1074,7 +1074,6 @@
             Wing Tai Road <br />Chai Wan, Hong Kong
           </p> -->
           <ul class="list-unstyled">
-            <!--<li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>-->
             <li>
               <i class="fa fa-envelope fa-fw"></i>
               <a
@@ -1121,23 +1120,11 @@
   <script src="js/bootstrap.min.js"></script>
 
   <script src="js/filter.js"></script>
+  <script src="js/menu.js"></script>
 
   <!-- Custom Theme JavaScript -->
   <script>
-    // Closes the sidebar menu
-    document.getElementById("menu-close").addEventListener("click", function (e) {
-      e.preventDefault();
-      document.getElementById("sidebar-wrapper").classList.remove("active");
-    });
-
-    // toggle sidebar menu
-    document.getElementById("menu-toggle").addEventListener("click", function (e) {
-      e.preventDefault();
-      document.getElementById("sidebar-wrapper").classList.toggle("active");
-    });
-
-
-    // Scrolls to the selected menu item on the page
+    // convert top code from jquery to vanilla js
     $(function () {
       $(
         "a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])"
@@ -1163,6 +1150,7 @@
         }
       });
     });
+
     //#to-top button appears after scrolling
     var fixed = false;
     $(document).scroll(function () {

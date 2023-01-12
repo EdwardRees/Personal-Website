@@ -9,9 +9,7 @@
   <meta name="author" content="Edward Rees" />
   <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
   <title>Edward Rees</title>
-  <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
-  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
 
   <script src="components/index.js" type="text/babel"></script>
 
@@ -27,6 +25,12 @@
   <link
     href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
     rel="stylesheet" type="text/css" />
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
 </head>
 
 <body>
@@ -301,6 +305,9 @@
             </select>
           </div>
           <br />
+
+          <div id="experience1"></div>
+
 
           <div class="job text-left teaching">
             <div class="col-sm-1">
@@ -1245,6 +1252,18 @@
   </script>
 
   <script src="/fontawesome-5.14/js/all.js"></script>
+
+  <!-- <script src="components/Experience.js" type="text/babel"></script> -->
+  <!-- <script src="components/Experience.js" type="text/babel">
+    descriptions = ["Assisted in teaching a class of 30 students in a computer science course.", "Graded assignments and exams.", "Helped students with their assignments and exams."]
+
+    ReactDOM.render(
+      <Experience type="teaching" date="2021-2022" website="https://www.usfca.edu"
+        title="Byte Education" location="San Francisco" company="University of San Francisco" descriptions={descriptions}></Experience>,
+      document.getElementById("experience1")
+    );
+
+  </script> -->
 </body>
 
 </html>

@@ -12,6 +12,7 @@ The True Beginning
 Projects:
 
 - [First website for Genius Hour](https://github.com/EdwardR5/EdwardRees.github.io/blob/master/static/ghp/original.html)
+  - The first website I ever wrote. It was an experience to see what coding actually looked and felt like. Granted this was the first time, I didn't know how to host the website and ended up hosting it on my Computer locally. 
 
 Languages:
 
@@ -25,7 +26,8 @@ Playing around and trying out creating Mods for Minecraft
 
 First Minecraft Mod
 
-[https://themodbros.wixsite.com/themodbros/downloads](https://themodbros.wixsite.com/themodbros/downloads)
+- [https://themodbros.wixsite.com/themodbros/downloads](https://themodbros.wixsite.com/themodbros/downloads)
+  - My first experience working with typed programming, following YouTube tutorials and MinecraftForum tutorials. These weren't only one mod, but contained multiple: An Overpowered Scepter, Vanilla Plus (Adding more armors and tools to Vanilla), and a Game weapons mod (Skyrim, Infinity Blade, etc). It was really rudimentary coding and pretty cookie cutter, but definitely showed me how complicated programming can get.
 
 Languages:
 
@@ -45,7 +47,7 @@ Languages:
 
 Projects:
 
-[https://github.com/EdwardRees/IntroToProgrammingProject](https://github.com/EdwardRees/IntroToProgrammingProject)
+- [https://github.com/EdwardRees/IntroToProgrammingProject](https://github.com/EdwardRees/IntroToProgrammingProject)
 
 ### 2016
 
@@ -232,7 +234,7 @@ Frameworks / Libraries:
 
 ### 2022
 
-Last semester of Undergraduate Computer Science studies
+Last semester of Undergraduate Computer Science studies; Start of Teaching Masters 5th Year
 
 Courses:
 
@@ -253,6 +255,7 @@ Projects:
 - [Self Care Project](https://github.com/Self-Care-Project/Journal)
 - [PERN Todo List](https://github.com/EdwardRees/Todo-Project)
 - [Morse Code Converter App](https://github.com/EdwardRees/MorseCodeConverter)
+- [Quote Viewer](https://github.com/EdwardRees/Quote-Viewer)
 
 Languages:
 
@@ -266,6 +269,7 @@ Languages:
 - Ruby
 - Python
 - C#
+- Docker
 
 Frameworks / Libraries:
 
@@ -279,10 +283,45 @@ Frameworks / Libraries:
 - Qt
 - WindowsForms
 - Pygame
+- Axios
+
+Hosting Systems:
+
+- Linux Server (Ubuntu)
+- nginx
+- pm2
+
+### 2023
+
+Last semester of University
+
+Projects:
+
+- [College Companion](https://github.com/College-Companion/web)
+  - A revamp of the College Selector with new features. The College Companion combines the College Selector, the College Acceptance Calculator, and Tour Questions, with new features, such as: a Four Year Plan, a GPA Calculator, and Guiding Conversations Questions around applying and choosing a University. The purpose of this project is to help support students with their entire journey throguh University, starting with their application, ending with their time at University.
+
+Languages:
+
+- TypeScript
+
+Frameworks / Libraries:
+
+- React
+- NextJS
+- NodeJS
+
+Hosting Systems:
+
+- Linux Server (Ubuntu)
+- Supabase
+- pm2
+- nginx
 
 ## TODO
 
-Include React Native Projects
-Connect React Native folder to Github with current organization format
-Reorder by dates
-Add project descriptions for each project
+- Include React Native Projects
+- Connect React Native folder to Github with current organization format
+- Reorder by dates
+- Add project descriptions for each project
+- Add Byte Education lesson projects
+

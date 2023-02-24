@@ -801,15 +801,38 @@
             "ExpressJS",
             "Axios"
           ]
+        },
+        {
+          "name": "Rust Practice",
+          "link": "#",
+          "desc": "Learning the programming language of Rust",
+          "languages": [
+            "Rust"
+          ]
+        },
+        {
+          "name": "Learning Python Through Projects",
+          "link": "https://github.com/EdwardRees/Learning-Python-Through-Projects",
+          "desc": "A textbook written in Markdown, using mdbook to teach Python using Projects. This may end up being the textbook I use in the future when I eventually teach Python. It's also hosted at python-book.byteeducation.net",
+          "languages": [
+            "Rust",
+            "Markdown",
+            "mdbook",
+            "TOML"
+          ]
         }
       ],
       "languages": [
-        "TypeScript"
+        "TypeScript",
+        "Rust",
+        "Markdown"
       ],
       "frameworks/libraries": [
         "React",
         "NextJS",
-        "NodeJS"
+        "NodeJS",
+        "mdbook",
+        "TOML"
       ],
       "hosting systems": [
         "Linux Server (Ubuntu)",
